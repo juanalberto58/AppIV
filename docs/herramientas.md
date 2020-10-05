@@ -6,7 +6,7 @@ Para este proyecto he elegido el lenguaje de programación Go ya buscando inform
 
 ## Base de Datos **MongoDb**
 
-Como Base de Datos he escogido MongoDb ya que ya he trabajado en otras ocasiones con el y lo conozco además de por la potencia que ofrece y la naturalidad de concebir los datos frente al modelo tradicional de filas y columnas.
+Como base de datos he escogido MongoDb ya que ya he trabajado en otras ocasiones con el y lo conozco además de por la potencia que ofrece y la naturalidad de concebir los datos frente al modelo tradicional de filas y columnas.
 
 
 ## Test **GoTest**
