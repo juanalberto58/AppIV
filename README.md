@@ -9,15 +9,15 @@ Esta es tu App, con YourLife podras tener todo lo que te ocurre diariamente en l
 
 ## Herramientas
 
-	-**Lenguaje**: Go 
-	-**Base de Datos**: MongoDB
-	-**Test**: Go Test
+-**Lenguaje**: Go 
+-**Base de Datos**: MongoDB
+-**Test**: Go Test
 
 ## Documentación
 
-	-[**Documentación de las Herramientas**](./docs/herramientas.md) : Aqui podrás ver mas especificamente el porque de las herramientas seleccionadas.
-	-[**Documentación de la configuración de git**](./docs/conf-git.md) : Aqui podrás ver la configuración de Git para el proyecto.
-	-[**Historias de Usuario**](./docs/HU.md) : Aqui podrás encontrar los pasos a seguir en el proyecto.
+-[**Documentación de las Herramientas**](./docs/herramientas.md) : Aqui podrás ver mas especificamente el porque de las herramientas seleccionadas.
+-[**Documentación de la configuración de git**](./docs/conf-git.md) : Aqui podrás ver la configuración de Git para el proyecto.
+-[**Historias de Usuario**](./docs/HU.md) : Aqui podrás encontrar los pasos a seguir en el proyecto.
 
 
 
