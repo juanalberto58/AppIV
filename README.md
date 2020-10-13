@@ -21,12 +21,13 @@ Para un correcto desarrollo del proyecto vamos a estructurarlo en etapas denomin
 
 ## Documentación
 
+- [**iv.yaml**](https://github.com/juanalberto58/AppIV/blob/master/iv.yaml) : Con este enlace accederas al fichero iv.yaml del proyecto.
 - [**Documentación de las Herramientas**](./docs/herramientas.md) : Aqui podrás ver mas especificamente el porque de las herramientas seleccionadas.
 - [**Documentación de la configuración de git**](./docs/config-git.md) : Aqui podrás ver la configuración de Git para el proyecto.
 
 ## Autor
 
-El autor del proyecto es **Juan Alberto Rivera Peña**
+**Juan Alberto Rivera Peña**
 
 ## Información varia
 
