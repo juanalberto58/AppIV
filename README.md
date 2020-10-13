@@ -26,11 +26,11 @@ Para un correcto desarrollo del proyecto vamos a estructurarlo en etapas denomin
 
 ## Autor
 
-El autor del proyecto es Juan Alberto Rivera Peña
+El autor del proyecto es **Juan Alberto Rivera Peña**
 
 ## Información varia
 
-Este proyecto se lleva a cabo mediante el desarrollo de la asignatura **Infraestructura Virtual**de cuarto curso del grado de Ingenieria Informática de la Universidad de Granada. A continuación os dejo el enlace al repositorio padre en el que podreis consultar el resto de información sobre esta [asignatura.](https://github.com/JJ/IV-20-21)
+Este proyecto se lleva a cabo mediante el desarrollo de la asignatura **Infraestructura Virtual** de cuarto curso del grado de Ingenieria Informática de la Universidad de Granada. A continuación os dejo el enlace al repositorio padre en el que podreis consultar el resto de información sobre esta [asignatura.](https://github.com/JJ/IV-20-21)
 
 
 
