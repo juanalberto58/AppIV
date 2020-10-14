@@ -6,7 +6,7 @@ El usuario tendra la capacidad de poder añadir una nueva entrada en el diario s
 
 ## [Historia de Usuario 2](https://github.com/juanalberto58/AppIV/issues/10)
 
-El usuario tendra la capacidad de poder editar alguna entrada de algun día concreto, pudiendo añadir algún detalle que le pasara y a la hora de escribir esa entrada no lo pusiera.
+El usuario tendra la capacidad de poder editar alguna entrada de algun día concreto, podiendo añadir algún detalle que le pasara y a la hora de escribir esa entrada no lo pusiera.
 
 ## [Historia de Usuario 3](https://github.com/juanalberto58/AppIV/issues/11)
 
