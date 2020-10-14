@@ -13,7 +13,7 @@ La elección del proyecto se basa en facilitar la creación de un diario persona
 
 ## Proceso de desarrollo del proyecto
 
-Para un correcto desarrollo del proyecto vamos a estructurarlo en etapas de manera que cada semana implementaremos las tareas que podemos consultar en el siguiente [enlace](./docs/etapas.md).
+Para un correcto desarrollo del proyecto vamos a estructurarlo en etapas de manera que cada semana implementaremos las tareas que podemos consultar en el siguiente [**enlace**](./docs/etapas.md).
 
 ## Historias de Usuario
 
