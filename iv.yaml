@@ -1,1 +1,13 @@
-entidad: src/YourLife.go
+entidad: 
+    -src/YourLife/YourLife.go
+    -src/YourLife/api.go
+
+lenguaje: 
+    -go
+
+test: 
+    -src/YourLife/api_test.go
+
+taskfile:
+    -makefile
+
