@@ -13,7 +13,12 @@ Como base de datos he escogido MongoDb ya que ya he trabajado en otras ocasiones
 
 Se utilizara GoTest por su sencillez de utilizacion y porque ya el lenguaje Go nos lo ofrece incorporado y no necesitamos utilizar librerias externas.
 
+## Contrucción **Makefile**
 
+La herramienta de contrucción escogida es [Makefile](https://github.com/juanalberto58/AppIV/blob/master/makefile) ya que ya lo he utilizado previamente y lo conozco bastente bien. Makefile nos ofrece además mucha facilidad a la hora de realizar tareas de manera automática utilizando un único comando. En este caso esta construido de manera que con:
+	- make build: Compilamos el proyecto.
+	- make run: Ejecutamos el proyecto.
+	- make test: Realizamos los test al proyecto.
 
 
 
