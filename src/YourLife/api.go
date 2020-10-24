@@ -64,7 +64,7 @@ func (e *Entrada)setTexto(t string){
 }
 
 
-/****************************** GUARDAR ENTRADA ******************************/
+/***************************** GUARDAR ENTRADA ******************************/
 /*func GuardarEntrada(tit string, d string, h string, text string){
 	var e Entrada
 	e.Titulo = tit
