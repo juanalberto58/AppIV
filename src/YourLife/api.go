@@ -65,13 +65,13 @@ func (e *Entrada)setTexto(t string){
 
 
 /**************************** GUARDAR ENTRADA ******************************/
-/*func GuardarEntrada(tit string, d string, h string, text string){
-	var e Entrada
+func (e *Entrada)GuardarEntrada(tit string, d string, h string, text string){
+	//var e Entrada
 	e.Titulo = tit
 	e.Dia = d
 	e.Hora = h
 	e.Texto = text
-}*/
+}
 
 /****************************** EDITAR ENTRADA ******************************/
 /*func EditarEntrada(ntit string, nd string, nh string, ntext string){
