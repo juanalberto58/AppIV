@@ -21,6 +21,7 @@ De modo que para este proyecto al elegir Go como lenguaje no tenemos que recurri
 ## Contrucción **Makefile**
 
 El lenguaje Go tiene un gestor de tareas implícito en el compilador y además aparentemente no existe ningún task runner específico para este lenguaje, por lo tanto la herramienta de construcción escogida es [Makefile](https://github.com/juanalberto58/AppIV/blob/master/makefile) ya que ya lo he utilizado previamente y lo conozco bastante bien. Makefile nos ofrece además mucha facilidad a la hora de poder tener todas las tareas juntas y poder ejecutarlas de manera automática. En este caso ahora mismo las tareas que podremos llevar a cabo son las siguientes:
+
 	- make build: Compilamos el proyecto.
 	- make run: Ejecutamos el proyecto.
 	- make test: Realizamos los test al proyecto.
