@@ -96,10 +96,19 @@ func TestSetTexto(t *testing.T){
 }
 
 /****************************** TEST GUARDAR_ENTRADA ******************************/
-/*func TestGuardarEntrada(t *testing.T){
+func TestGuardarEntrada(t *testing.T){
 	t.Log("Test GuardarEntrada")
 	entr.GuardarEntrada("testTituloGe","testDiaGe","testHoraGe","testTextoGe")
 	if(entr.getTitulo()!="testTituloGe"){
-		t.Error("Fallo en la función GuardarEntrada")
+		t.Error("Fallo en la función GuardarEntrada (Titulo) ")
 	}
-}*/
+	if(entr.getDia()!="testDiaGe"){
+		t.Error("Fallo en la función GuardarEntrada (Dia) ")
+	}
+	if(entr.getHora()!="testHoraGe"){
+		t.Error("Fallo en la función GuardarEntrada (Hora) ")
+	}
+	if(entr.getTexto()!="testTextoGe"){
+		t.Error("Fallo en la función GuardarEntrada (Texto) ")
+	}
+}
