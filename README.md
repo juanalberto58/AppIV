@@ -8,7 +8,7 @@ Esta es tu App, con YourLife podras tener todo lo que te ocurre diariamente en l
 
 ## Elección del proyecto
 
-La elección del proyecto se basa en facilitar la creación de un diario personal de manera online mediante un servicio. Vivimos en una época en la que el papel y el bolígrafo se han quedado obsoletos práticamente y de esta manera podemos impulsar o por lo menos motivar de una manera mas interactiva a las nuevas generaciones a que`puedan crear su propio diario que más tarde puedan leer y recordar viejos momentos
+La elección del proyecto se basa en facilitar la creación de un diario personal de manera online mediante un servicio. Vivimos en una época en la que el papel y el bolígrafo se han quedado obsoletos práticamente y de esta manera podemos impulsar o por lo menos motivar de una manera mas interactiva a las nuevas generaciones a que`puedan crear su propio diario que más tarde puedan leer y recordar viejos momentos.
 
 
 ## Proceso de desarrollo del proyecto
