@@ -4,7 +4,7 @@
 
 ¿No te atreves a escribir un diario con papel y boligrafo? ¿Te resultaria mas facil y mas comodo poder hacerlo de manera online?
 
-Esta es tu App, con YourLife podras tener todo lo que te ocurre diariamente en la nube de manera mucho más visual.
+Esta es tu App, con YourLife podras tener todo lo que te ocurre diariamente en la nube de manera mucho más visual
 
 ## Elección del proyecto
 
