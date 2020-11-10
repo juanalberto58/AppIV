@@ -16,14 +16,14 @@ El resto de alternativas probadas son:
 
 ## Dockerfile
 Como podemos ver en dicho fichero, su contrucción sigue unos simples pasos:
-- FROM golang:1.15.3-alpine3.12 : Elegimos el contenedor base que utilizaremos.
-- LABEL maintainer="Juan Alberto Rivera Peña" : Añadimos una etiqueta con el nombre del creador.
-- WORKDIR /test : Asignamos el directorio en el que trabajaremos, en este caso test.
-- COPY . . : Copiamos los archivos necesarios para la realización de los test.
-- RUN apk update && apk add make : Actualizamos e instalamos la herramienta make.
-- RUN adduser -D juanalberto58 : Añadimos un usuario a la imagen.
-- USER juanalberto58 : Utilizamos el usuario sin privilegios.
-- CMD ["make","test"] : Damos la orden de la ejecución de los test.
+- **FROM golang:1.15.3-alpine3.12** : Elegimos el contenedor base que utilizaremos.
+- **LABEL maintainer="Juan Alberto Rivera Peña"** : Añadimos una etiqueta con el nombre del creador.
+- **WORKDIR /test** : Asignamos el directorio en el que trabajaremos, en este caso test.
+- **COPY . .** : Copiamos los archivos necesarios para la realización de los test.
+- **RUN apk update && apk add make** : Actualizamos e instalamos la herramienta make.
+- **RUN adduser -D juanalberto58** : Añadimos un usuario a la imagen.
+- **USER juanalberto58** : Utilizamos el usuario sin privilegios.
+- **CMD ["make","test"]** : Damos la orden de la ejecución de los test.
 
 
 ## Enlazando Github con DockerHub
