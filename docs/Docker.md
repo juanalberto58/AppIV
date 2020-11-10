@@ -38,6 +38,9 @@ En el momento en el que la vinculemos ya nos aparecerá la opción de poner auto
 
 Además al pulsar el botón de 'Configure Automate Builds' ya lo podremos configurar, tendremos que asociar nuestro repo de DockerHub con nuestro repo de Github, decirle en que parte tenemos el fichero Dockerfile y una vez hecho esto ya tenemos el proceso completado.
 
+![Automatiza Builds](../image/menu_final.png)
+
+
 
 
 
