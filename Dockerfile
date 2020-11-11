@@ -9,11 +9,11 @@ WORKDIR /test
 ADD . .
 
 #Actualizamos e instalamos make.
-RUN apk update && apk add make
+RUN apk update && apk upgrade \ && apk add make
 
 #Creamos un usuario con el cual haremos la ejecucion sin privilegios.
 RUN adduser -D juanalberto58
 USER juanalberto58
 
 #Comando que activarán los test del proyecto.
-CMD ["make","test"]
+CMD go test ./src/YourLife
