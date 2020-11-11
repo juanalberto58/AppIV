@@ -6,7 +6,7 @@ LABEL maintainer="Juan Alberto Rivera Peña"
 
 #Asignamos directorio en el que trabajaremos y copiamos los archivos necesarios.
 WORKDIR /test
-COPY . .
+ADD . .
 
 #Actualizamos e instalamos make.
 RUN apk update && apk add make
