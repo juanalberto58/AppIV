@@ -7,7 +7,7 @@ LABEL maintainer="Juan Alberto Rivera Peña"
 #Actualizamos, instalamos make y además añadimos un usuario aprovechando la misma instrucción.
 RUN apk update && apk add make && adduser -D juanalberto58
 
-#Utilizaremos el usuario con el cual haremos la ejecucion sin privilegios.
+#Utilizaremos el usuario con el cual haremos la ejecucion sin privilegios
 USER juanalberto58
 
 #Asignamos directorio en el que trabajaremos y copiamos los archivos necesarios.
