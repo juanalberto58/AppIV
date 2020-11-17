@@ -21,7 +21,6 @@ Como podemos ver además el tamaño es menor.
 Por lo tanto trás todo lo anterior me quedo con la imagen **Alpine**
 
 
-
 ## Dockerfile
 Tras realizar millones de pruebas ya que no reconocía ni la herramienta make ni los directorios, la configuración de dicho fichero es la siguiente:
 - **FROM golang:1.15.3-alpine3.12** : Elegimos el contenedor base que utilizaremos.
