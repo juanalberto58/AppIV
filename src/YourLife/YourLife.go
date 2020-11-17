@@ -18,12 +18,13 @@ func main() {
 	[ 5 ] Ver Entrada Completa
     `
 	//fmt.Print(menu)
-
+	var cont int
+	var contenido [4]Entrada
 	var opcion int 
 	var exit bool
 	exit=false
 	//fmt.Scanln(&opcion)
-
+	cont=0
 	for{
 		fmt.Print(menu)
 		fmt.Scanln(&opcion)
@@ -53,16 +54,18 @@ func main() {
 			case 5:
 				exit=false
 				fmt.Println("Parece que has tenido un dia apasionante...")
-				fmt.Println("Tu dia se titula... " + e.getTitulo() +" ")
-				fmt.Println("El dia para recordar es el... " + e.getDia() + " ")
-				fmt.Println("Lo escribistes a las... " + e.getHora() + " ")
-				fmt.Println("Esto fué lo que te paso... " + e.getTexto() + " ")
+				fmt.Println("Tu dia se titula... " + e.getTitulo() +"")
+				fmt.Println("El dia para recordar es el... " + e.getDia() + "")
+				fmt.Println("Lo escribistes a las... " + e.getHora() + "")
+				fmt.Println("Esto fué lo que te paso... " + e.getTexto() + "")
 		}
+		contenido[0] = e
+		cont++
 		if(exit){
 			break
 		}
 	}
-	fmt.Println(" Adiossss ")
+	fmt.Println("Adiossss")
 
 	//GuardarEntrada(e.Titulo,e.Dia,e.Hora,e.Texto)
 
