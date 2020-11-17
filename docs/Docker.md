@@ -34,6 +34,24 @@ Tras realizar millones de pruebas ya que no reconocía ni la herramienta make ni
 - **CMD ["make","test"]** : Damos la orden de la ejecución de los test.
 
 
+## Optimización de la imagen
+Para optimizar la imagen creada he realizado varios pasos:
+- Crear un archivo .dockerignore que nos elimine todos los archivos innecesarios.
+- Se han minimizado el número de etiquetas RUN, COPY ya que cada instrucción aumenta el tamaño de la construcción.
+
+Con estos dos simples pasos ya hemos aligerado la imagen, aunque la velocidad de ejecución sigue siendo la misma de 0,001s.
+
+
+## Github Container Registry
+Trás realizar toda la serie de procesos y pasos para enlazar el container de docker con github se me han presentado el siguiente problema:
+
+![Container Registry](../image/Container_registry.png)
+
+Y parece ser que mi cuenta de Github tiene Github Packages desactivado:
+
+![Container Registry](../image/github_package.png)
+
+
 ## Enlazando Github con DockerHub
 
 Para enlazar Github con DockerHub primero tenemos que acceder a DockerHub, ir a nuestro repositorio creado, pulsar sobre el menú 'builds' y una vez hecho esto veremos la opción de vincular nuestra cuenta de git: 
