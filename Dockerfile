@@ -4,11 +4,10 @@ FROM golang:alpine3.12
 #Etiqueta de autor del dockerfile.
 LABEL maintainer="Juan Alberto Rivera Peña"
 
-#Actualizamos e instalamos make.
-RUN apt-get update && apt-get install make
+#Actualizamos, instalamos make y además añadimos un usuario aprovechando la misma instrucción.
+RUN apk update && apk add make && adduser -D juanalberto58
 
-#Creamos un usuario con el cual haremos la ejecucion sin privilegios.
-RUN adduser -disabled-password juanalberto58
+#Utilizaremos el usuario con el cual haremos la ejecucion sin privilegios.
 USER juanalberto58
 
 #Asignamos directorio en el que trabajaremos y copiamos los archivos necesarios.
