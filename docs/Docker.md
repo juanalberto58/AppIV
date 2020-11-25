@@ -23,14 +23,13 @@ Por lo tanto trás todo lo anterior me quedo con la imagen **Alpine**
 
 ## Dockerfile
 Tras realizar millones de pruebas ya que no reconocía ni la herramienta make ni los directorios, la configuración de dicho fichero es la siguiente:
-- **FROM golang:1.15.3-alpine3.12** : Elegimos el contenedor base que utilizaremos.
+- **FROM golang:1.15-alpine** : Elegimos el contenedor base que utilizaremos.
 - **LABEL maintainer="Juan Alberto Rivera Peña"** : Añadimos una etiqueta con el nombre del creador.
-- **RUN apk update && apk add make** : Actualizamos e instalamos la herramienta make.
-- **RUN adduser -D juanalberto58** : Añadimos un usuario a la imagen.
-- **USER juanalberto58** : Utilizamos el usuario sin privilegios.
 - **WORKDIR /test** : Asignamos el directorio en el que trabajaremos, en este caso test.
 - **COPY . .** : Añadimos los archivos necesarios para la realización de los test.
-- **CMD ["make","test"]** : Damos la orden de la ejecución de los test.
+- **RUN apk add --no-cache make && adduser --disabled-password juanalberto58** : Instalamos la herramienta make necesaria y además que ignore toda la caché y añadimos un usuario a la imagen descativando contraseña.
+- **USER juanalberto58** : Utilizamos el usuario sin privilegios.
+- **CMD make test** : Damos la orden de la ejecución de los test.
 
 
 ## Optimización de la imagen
@@ -40,8 +39,17 @@ Para optimizar la imagen creada he realizado varios pasos:
 
 Con estos dos simples pasos ya hemos aligerado la imagen, aunque la velocidad de ejecución sigue siendo la misma de 0,001s.
 
+## Buenas Prácticas
+- No ejecutamos los test con el usuario root, que es el usuario por defecto de docker ya que no es necesario que nuestros test se ejecuten con privilegios de administrador.
+- Hemos creado el fichero dockerignore para borrar todos los archivos que no necesitamos como por ejemplo los archivos de texto y las imágenes. 
+- Se ha hecho uso de la instrucción WORKDIR en vez de utilizar comandos como mkdir.
+- Se han minimizado todas las etiquetas para minimizar el tamaño.
+- Se han añadido metadatos en el proyecto que puedan servir para dar información.
+- Se ha tratado de hacer la instrucción RUN más legible dividiendo en saltos de línea los comandos a ejecutar.
+- La única mala práctica es que se que añado más ficheros de la cuenta aunque luego se borran con el dockerignore ya que he probado de mil maneras y no hay manera valga la redundancia.
 
-## Github Container Registry
+
+## Github Container Registry -- Treescale
 Trás realizar toda la serie de procesos y pasos para enlazar el container de docker con github se me han presentado el siguiente problema:
 
 ![Container Registry](../image/Container_registry.png)
@@ -50,6 +58,12 @@ Y parece ser que mi cuenta de Github tiene Github Packages desactivado:
 
 ![Container Registry](../image/github_package.png)
 
+Debido a esto he tenido que buscar un Container Registry alternativo y el elegido es Treescale.com. Trás crear mi repositorio en treescale el proceso para subir el contenedor es el siguiente:
+
+![Treescale](../image/treescale.png)
+![Treescale1](../image/treescale1.png)
+
+Donde el enlace a mi repositorio es el [siguiente](https://repo.treescale.com/juanalberto58/appiv)
 
 ## Enlazando Github con DockerHub
 
