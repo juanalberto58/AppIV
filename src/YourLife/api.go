@@ -5,7 +5,9 @@ type Entrada struct{
 	Dia string 
 	Hora string
 	Texto string
+	cont int
 }
+
 
 /****************************** CONSTRUCTORES ******************************/
 func (e *Entrada)Contructor(){
@@ -13,13 +15,15 @@ func (e *Entrada)Contructor(){
 	e.Dia = ""
 	e.Hora = ""
 	e.Texto = ""
+	e.cont = 0
 }
 
-func (e *Entrada)ContructorParametros(tit string, d string, h string, text string){
+func (e *Entrada)ContructorParametros(tit string, d string, h string, text string, c int){
 	e.Titulo = tit
 	e.Dia = d
 	e.Hora = h
 	e.Texto = text
+	e.cont = c
 }
 /****************************** GET and SET ******************************/
 
@@ -63,15 +67,47 @@ func (e *Entrada)setTexto(t string){
 	e.Texto=t
 }
 
+/***************** SET NUMERO DE ENTRADAS **********************/
+func (e *Entrada)setCont(c int) {
+	e.cont=c
+}
 
-/**************************** GUARDAR ENTRADA ******************************/
-func (e *Entrada)GuardarEntrada(tit string, d string, h string, text string){
-	//var e Entrada
+/***************** GET NUMERO DE ENTRADAS **********************/
+func (e Entrada)getCont() int{
+	return e.cont
+}
+
+/***************** SEARCH ENTRADA **********************/
+/*func searchEntrada(array []Entrada,d string, con int) (string,string,string){
+	var i int
+	var o int
+	var encon bool
+	var nada string
+
+	for i = 0; i < con; i++ {
+		if(array[i].getDia()==d){
+			encon = true
+		}else{
+			encon = false
+		}
+	}
+	if (encon==true){
+		return array[i].getTitulo(), array[i].getHora(), array[i].getTexto()
+	}else{
+		return nada, nada, nada
+	}
+
+}*/
+
+
+/****************************** GUARDAR ENTRADA ******************************/
+/*func GuardarEntrada(tit string, d string, h string, text string){
+	var e Entrada
 	e.Titulo = tit
 	e.Dia = d
 	e.Hora = h
 	e.Texto = text
-}
+}*/
 
 /****************************** EDITAR ENTRADA ******************************/
 /*func EditarEntrada(ntit string, nd string, nh string, ntext string){
