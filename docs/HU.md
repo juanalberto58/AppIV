@@ -12,4 +12,8 @@ El usuario tendra la capacidad de poder editar alguna entrada de algun día conc
 
 El usuario podra borrar una entrada del diario de algún determinada dia en concreto que no quiera volver a recordar.
 
+## [Historia de Usuario 4](https://github.com/juanalberto58/AppIV/issues/32)
+
+El usuario podra ver el total de entradas introducidas en el sistema.
+
 
