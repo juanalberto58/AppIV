@@ -78,7 +78,7 @@ func (e Entrada)getCont() int{
 }
 
 /***************** SEARCH ENTRADA **********************/
-/*func searchEntrada(array []Entrada,d string, con int) (string,string,string){
+/**func searchEntrada(array []Entrada,d string, con int) (string,string,string){
 	var i int
 	var o int
 	var encon bool
