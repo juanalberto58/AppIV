@@ -1,9 +1,11 @@
+test: 
+	go test -v ./src/YourLife
+	
 build:
-	go build ./src/Yourlife 
-	mv Yourlife src/Yourlife
+	go build ./src/YourLife/
+	mv YourLife src/YourLife
 
 run: 
-	go run ./src/Yourlife
+	go run ./src/YourLife
 
-test: 
-	go test ./src/Yourlife
+
