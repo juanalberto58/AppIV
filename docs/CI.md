@@ -21,7 +21,7 @@ A través de el siguiente enlace llegara al [fichero de configuración](https://
 
 Y como muestro en la siguiente captura de pantalla ya tenemos Travis funcionando:
 
-[Travis-funcionando](../images/travis-funcionando.png)
+![Travis-funcionando](../images/travis-funcionando.png)
 
 ## Shippable
 
