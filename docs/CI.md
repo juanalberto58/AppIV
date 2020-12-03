@@ -19,5 +19,9 @@ Despues de elegir la imagen lo siguiente es configurar que se va a ejecutar. En 
 
 A través de el siguiente enlace llegara al [fichero de configuración](https://github.com/juanalberto58/AppIV/blob/master/.travis.yml) de Travis.
 
+Y como muestro en la siguiente captura de pantalla ya tenemos Travis funcionando:
+
+[Travis-funcionando](../images/travis-funcionando.png)
+
 ## Shippable
 
