@@ -8,4 +8,5 @@ build:
 run: 
 	go run ./src/YourLife
 
-
+travis:
+	docker run -t -v `pwd`:/test juanalberto58/appiv
