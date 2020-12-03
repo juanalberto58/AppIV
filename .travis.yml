@@ -1,0 +1,3 @@
+languaje: minimal
+
+script: make travis
