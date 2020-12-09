@@ -46,3 +46,4 @@ A través del siguiente enlace llegará al [fichero de configuración](https://g
 
 Y una vez realizados todos los anteriores pasos ya tenemos shippable funcionando como muestro en la siguiente captura de pantalla:
 
+![Shippable-funcionando](../image/func_shippable.png)
