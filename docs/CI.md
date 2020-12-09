@@ -7,13 +7,13 @@ Como opción principal utilizaremos Travis que más tarde hablaremos sobre su co
 
 ## Travis
 
-Primeramente tenemos que abrirnos una cuenta en la página de Travis, además en el proceso de creación de dicha cuenta podemos vincularla con nuestra cuenta de Github para poder ejecutar el servicio más tarde a traves de la app de Travis de Github App automaticamente.
+Primeramente tenemos que abrirnos una cuenta en la página de Travis, además en el proceso de creación de dicha cuenta podemos vincularla con nuestra cuenta de Github para poder ejecutar el servicio más tarde a través de la app de Travis de Github App automáticamente.
 
 ![travis1](../image/travis1.png)
 
 Una vez creada, lo siguiente que debemos de hacer es el archivo de configuración, .travis.yml. Este archivo lo configuramos de la siguiente manera:
 
-Como lenguaje escogeremos **minimal**, utilizaremos este ya que con Travis ejecutaremos la llamada al contenedor que tenemos previamente configurado con Docker con la ejecución de los test del proyecto, por lo tanto no necesitaremos ningun lenguaje especifico y cogeremos este ya que disponemos de la herramienta de Docker y es el que menos dependencias innecesarias en nuestro caso tiene y en teoría mas rápido se ejecuta.
+Como lenguaje escogeremos **minimal**, utilizaremos este ya que con Travis ejecutaremos la llamada al contenedor que tenemos previamente configurado con Docker con la ejecución de los test del proyecto, por lo tanto no necesitaremos ningún lenguaje especifico y cogeremos este ya que disponemos de la herramienta de Docker y es el que menos dependencias innecesarias en nuestro caso tiene y en teoría mas rápido se ejecuta.
 
 Despues de elegir el lenguaje lo siguiente es configurar que se va a ejecutar. En este caso lo que haremos será una llamada a nuestro gestor de tareas, el cual llamará a nuestro contenedor de Docker el cual ya se encargara de hacer los test oportunos.
 
@@ -40,7 +40,7 @@ Una vez creada y vinculada con Github tenemos que sincronizar con el repositorio
 
 Una vez habilitado nuestro repositorio el siguiente paso es hacer el archivo de configuración, shippable.yml, el cual es muy similar al archivo de configuración de travis, su configuración será la siguiente:
 
-De igual manera que en el de Travis tenemos que seleccionar un lenguaje, en este caso el lenguaje será **Go** ya que al contrario que Travis, este no reconoce **minimal**. lo siguiente que tenemso que decirle en el fichero de configuración es la versión del lenguaje, que en mi caso será la **1.15**. Una vez seleccionado el lenguaje y su versión, lo siguiente será hacer una llamada a nuestro gestor de tareas, el cual llamará a nuestro contenedor que se encargará de hacer los test.
+De igual manera que en el de Travis tenemos que seleccionar un lenguaje, en este caso el lenguaje será **Go** ya que al contrario que Travis, este no reconoce **minimal**. lo siguiente que tenemos que decirle en el fichero de configuración es la versión del lenguaje, que en mi caso será la **1.15**. Una vez seleccionado el lenguaje y su versión, lo siguiente será hacer una llamada a nuestro gestor de tareas, el cual llamará a nuestro contenedor que se encargará de hacer los test.
 
 A través del siguiente enlace llegará al [fichero de configuración](https://github.com/juanalberto58/AppIV/blob/master/.shippable.yml) de shippable
 
