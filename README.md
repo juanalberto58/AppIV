@@ -26,7 +26,7 @@ Para un correcto desarrollo del proyecto vamos a estructurarlo en etapas de mane
 - [**Documentación de las Herramientas**](./docs/herramientas.md) : Aquí podrás ver mas específicamente el porqué de las herramientas seleccionadas.
 - [**Documentación de la configuración de git**](./docs/config-git.md) : Aquí podrás ver la configuración de Git para el proyecto.
 - [**Docker**](./docs/Docker.md) : En este apartado encontrarás toda la información relaccionada con la utilización de Docker, el ¿Como? y el ¿Por que? de esta herramienta.
-- [**Integración Contínua**](./docs/CI.md) : 
+- [**Integración Contínua**](./docs/CI.md) : En este apartado encontrarás todo los relativo a la configuración de Travis y Shippable.
 
 ## Autor
 
