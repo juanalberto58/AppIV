@@ -1,6 +1,9 @@
 # Seleccionamos el lenguaje que utilizamos en nuestro proyecto
 language: go
 
+# Asiganmos la versión del lenguaje
+go: 1.15
+
 # Hacemos la llamada a nuestro gestor de tareas, el cual se encargara de hacer las llamadas correspondientes para realizar los test del proyecto.
 build: 
   ci: make shippable
