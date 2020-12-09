@@ -10,3 +10,6 @@ run:
 
 travis:
 	docker run -t -v `pwd`:/test juanalberto58/appiv
+	
+shippable: 
+	docker run -t -v `pwd`:/test juanalberto58/appiv
