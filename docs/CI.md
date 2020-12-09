@@ -43,7 +43,7 @@ Una vez habilitado nuestro repositorio el siguiente paso es hacer el archivo de 
 De igual manera que en el de Travis tenemos que seleccionar un lenguaje, en este caso el lenguaje será **Go** ya que al contrario que en Travis no reconoce el **minimal**. 
 Una vez seleccionado el lenguaje lo siguiente será hacer una llamada a nuestro gestor de tareas, el cual llamará a nuestro contenedor que se encargará de hacer los test.
 
-A través del siguiente enlace llegará al [fichero de configuración](https://github.com/juanalberto58/AppIV/blob/master/shippable.yml) de shippable
+A través del siguiente enlace llegará al [fichero de configuración](https://github.com/juanalberto58/AppIV/blob/master/.shippable.yml) de shippable
 
 Y una vez realizados todos los anteriores pasos ya tenemos shippable funcionando como muestro en la siguiente captura de pantalla:
 
