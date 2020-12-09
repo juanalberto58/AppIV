@@ -1,0 +1,6 @@
+# Seleccionamos el lenguaje que utilizamos en nuestro proyecto
+language: go
+
+# Hacemos la llamada a nuestro gestor de tareas, el cual se encargara de hacer las llamadas correspondientes para realizar los test del proyecto.
+build:
+	ci: make test
