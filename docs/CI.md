@@ -11,13 +11,16 @@ Primeramente tenemos que abrirnos una cuenta en la página de Travis, además en
 
 ![travis1](../image/travis1.png)
 
-Una vez creada, lo siguiente que debemos de hacer es el archivo de configuración, .travis.yml. Este archivo lo configuramos de la siguiente manera:
+Una vez creada la cuenta tenemos que habilitar el repositorio en el que queramos que se aplique la integración continua. En nuestra cuenta de Github en la parte de ajustes, tenemos el apartado de integración en el cual podremos especificarle si queremos que la integración se active para todos los repositorios o si solo queremos activarla para ciertos repositorios unicamente:
+
+![travis2](../image/travis2.png)
+
+
+Una vez hecho los pasos anteriores, lo siguiente que debemos de hacer es el archivo de configuración, [.travis.yml.](https://github.com/juanalberto58/AppIV/blob/master/.travis.yml). Este archivo lo configuramos de la siguiente manera:
 
 Como lenguaje escogeremos **minimal**, utilizaremos este ya que con Travis ejecutaremos la llamada al contenedor que tenemos previamente configurado con Docker con la ejecución de los test del proyecto, por lo tanto no necesitaremos ningún lenguaje especifico y cogeremos este ya que disponemos de la herramienta de Docker y es el que menos dependencias innecesarias en nuestro caso tiene y en teoría mas rápido se ejecuta.
 
 Despues de elegir el lenguaje lo siguiente es configurar que se va a ejecutar. En este caso lo que haremos será una llamada a nuestro gestor de tareas, el cual llamará a nuestro contenedor de Docker el cual ya se encargara de hacer los test oportunos.
-
-A través de el siguiente enlace llegara al [fichero de configuración](https://github.com/juanalberto58/AppIV/blob/master/.travis.yml) de Travis.
 
 Y como muestro en la siguiente captura de pantalla ya tenemos Travis funcionando:
 
