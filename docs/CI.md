@@ -20,7 +20,7 @@ Una vez hecho los pasos anteriores, lo siguiente que debemos de hacer es el arch
 
 Como lenguaje escogeremos **minimal**, utilizaremos este ya que con Travis ejecutaremos la llamada al contenedor que tenemos previamente configurado con Docker con la ejecución de los test del proyecto, por lo tanto no necesitaremos ningún lenguaje especifico y cogeremos este ya que disponemos de la herramienta de Docker y es el que menos dependencias innecesarias en nuestro caso tiene y en teoría mas rápido se ejecuta.
 
-Despues de elegir el lenguaje lo siguiente es configurar que se va a ejecutar. En este caso lo que haremos será una llamada a nuestro gestor de tareas, el cual llamará a nuestro contenedor de Docker el cual ya se encargara de hacer los test oportunos.
+Despues de elegir el lenguaje lo siguiente es configurar que se va a ejecutar. En este caso lo que haremos será una llamada a nuestro contenedor de Docker el cual ya se encargara de hacer los test oportunos.
 
 Y como muestro en la siguiente captura de pantalla ya tenemos Travis funcionando:
 
