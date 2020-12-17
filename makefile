@@ -9,5 +9,5 @@ run:
 	go run ./src/YourLife
 
 travis:
-	docker run -t -v `pwd`:/test juanalberto58/appiv
+	docker run -t -v $TRAVIS_BUILD_DIR:/test juanalberto58/appiv
 
