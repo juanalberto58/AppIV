@@ -35,7 +35,7 @@ Y como muestro en la siguiente captura de pantalla ya tenemos Travis funcionando
 
 Para empezar a configurar este servicio tenemos que proceder como con Travis, entramos en su página y nos abrimos una cuenta, durante el proceso podremos vincular dicha cuenta con nuestra cuenta de Github.
 
-Seguimos los pasos que nos indican, le damos autorización de nuestro datos y algunos permisos que se nos requiere y ya tendriamos nuestra cuenta de Github vinculada. (No tengo capturas para mostrar estos pasos debido a que este proceso lo realice ya y no puedo volver a repetirlo pero es simplemen seguir los pasos que nos indican desde shippable)
+Seguimos los pasos que nos indican, le damos autorización de nuestro datos y algunos permisos que se nos requiere y ya tendriamos nuestra cuenta de Github vinculada.
 
 ![Shippable](../image/shippable.png)
 
