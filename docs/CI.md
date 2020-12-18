@@ -15,6 +15,9 @@ Una vez creada la cuenta tenemos que habilitar el repositorio en el que queramos
 
 ![travis2](../image/travis2.png)
 
+Además tenemos que habilitar el repositorio que queramos, en este caso AppIv, en la página de Travis:
+
+![travis3](../image/travis3.png)
 
 Una vez hecho los pasos anteriores, lo siguiente que debemos de hacer es el archivo de configuración, [.travis.yml.](https://github.com/juanalberto58/AppIV/blob/master/.travis.yml). Este archivo lo configuramos de la siguiente manera:
 
@@ -26,7 +29,7 @@ Dicho esto prodriamos utilizar **Minimal** y **Generic**, pero como nos interesa
 
 Despues de elegir el lenguaje lo siguiente es configurar que se va a ejecutar. En este caso lo que haremos será una llamada a nuestro contenedor de Docker el cual ya se encargara de hacer los test oportunos.
 
-Y como muestro en la siguiente captura de pantalla ya tenemos Travis funcionando:
+Y como muestro en la siguiente captura de pantalla ya tenemos Travis funcionando para cada 'Push' que hagamos en nuestro repositorio:
 
 ![Travis-funcionando](../image/travis-funcionando.png)
 
