@@ -18,7 +18,11 @@ Una vez creada la cuenta tenemos que habilitar el repositorio en el que queramos
 
 Una vez hecho los pasos anteriores, lo siguiente que debemos de hacer es el archivo de configuración, [.travis.yml.](https://github.com/juanalberto58/AppIV/blob/master/.travis.yml). Este archivo lo configuramos de la siguiente manera:
 
-Como lenguaje escogeremos **minimal**, utilizaremos este ya que con Travis ejecutaremos la llamada al contenedor que tenemos previamente configurado con Docker con la ejecución de los test del proyecto, por lo tanto no necesitaremos ningún lenguaje especifico y cogeremos este ya que disponemos de la herramienta de Docker y es el que menos dependencias innecesarias en nuestro caso tiene y en teoría mas rápido se ejecuta.
+El lenguaje que estamos utilizando en nuestro proyecto es **GO** por lo tanto lo normal sería utilizar en nuestro archivo de configuración el lenguaje Go, pero como vamos a utilizar Docker y en nuestro Dockerfile ya le decimos que la imagen que tiene que utilizar es la de Golang no nos hace falta que el fichero de configuración de Travis tenga el lenguaje **Go**, solo que pueda ejecutar nuestro contenedor de Docker.
+
+Dicho esto prodriamos utilizar **Minimal** y **Generic**, pero como nos interesa que siempre se ejecute lo más rápido posible utilizaremos **minimal**. Esto se debe a que con minimal tenemos lo suficiente para ejecutar lo que queremos, en este caso Docker. Generic no lo utilizamos ya que aunque también puede ejecutar Docker tiene más servicios y herramientas que no necesitamos.
+
+![mingen](../image/mingen.png)
 
 Despues de elegir el lenguaje lo siguiente es configurar que se va a ejecutar. En este caso lo que haremos será una llamada a nuestro contenedor de Docker el cual ya se encargara de hacer los test oportunos.
 
@@ -35,7 +39,7 @@ Y como muestro en la siguiente captura de pantalla ya tenemos Travis funcionando
 
 Para empezar a configurar este servicio tenemos que proceder como con Travis, entramos en su página y nos abrimos una cuenta, durante el proceso podremos vincular dicha cuenta con nuestra cuenta de Github.
 
-Seguimos los pasos que nos indican, le damos autorización de nuestro datos y algunos permisos que se nos requiere y ya tendriamos nuestra cuenta de Github vinculada.
+Seguimos los pasos que nos indican, le damos autorización de nuestros datos y algunos permisos que se nos requiere y ya tendriamos nuestra cuenta de Github vinculada.
 
 ![Shippable](../image/shippable.png)
 
@@ -49,6 +53,10 @@ De igual manera que en el de Travis tenemos que seleccionar un lenguaje, en este
 
 A través del siguiente enlace llegará al [fichero de configuración](https://github.com/juanalberto58/AppIV/blob/master/.shippable.yml) de shippable
 
-Y una vez realizados todos los anteriores pasos ya tenemos shippable funcionando como muestro en la siguiente captura de pantalla:
+Y una vez realizados todos los anteriores pasos ya tenemos nuestra cuenta de Github vinculada a Shippable, tenemos el repositorio de Github en este caso AppIV habilitado y el archivo de configuración de Shippable destinado para nuestro repo de Github (AppIV), lo único que nos queda por realizar es activar la ejecución automática, simplemente lo que tenemos que hacer es en la pantalla de Jobs, en nuestro repo darle a Build: 
+
+![buildshippable](../image/buildshippable.png)
+
+Trás esto ya tendriamos Shippable configurado para que funcione automáticamente en nuestro repositorío de Github:
 
 ![Shippable-funcionando](../image/func_shippable.png)
