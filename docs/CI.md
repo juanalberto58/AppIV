@@ -52,7 +52,7 @@ Una vez creada y vinculada con Github tenemos que sincronizar con el repositorio
 
 Una vez habilitado nuestro repositorio el siguiente paso es hacer el archivo de configuración, shippable.yml, el cual es muy similar al archivo de configuración de travis, su configuración será la siguiente:
 
-De igual manera que en el de Travis tenemos que seleccionar un lenguaje, en este caso el lenguaje será **Go** ya que al contrario que Travis, este no reconoce **minimal**. lo siguiente que tenemos que decirle en el fichero de configuración es la versión del lenguaje, que en mi caso será la **1.15**. Una vez seleccionado el lenguaje y su versión, lo siguiente será hacer una llamada a nuestro gestor de tareas, el cual llamará a nuestro contenedor que se encargará de hacer los test.
+De igual manera que en Travis tenemos que seleccionar un lenguaje, en este caso el lenguaje será **Go** ya que al contrario que Travis, con Shippable no utilizaremos el contenedor de Docker para hacer los test, utilizaremos los propios test de Go ejecutándolos mediante nuestro gestor de tareas. La versión que utilizaremos será la **1.15** ya que es en la que se esta desarrollando el proyecto. Tras tener el lenguaje seleccionado y la versión lo siguiente es hacer la llamada a nuestro gestor de tareas que ya se encargará de hacer la llamada correspondiente para realizar los test correspondientes.
 
 A través del siguiente enlace llegará al [fichero de configuración](https://github.com/juanalberto58/AppIV/blob/master/.shippable.yml) de shippable
 
