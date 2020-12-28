@@ -7,10 +7,10 @@ exports.handler = async function(event, context){
 	//Se leen todos los datos del diario
     for (var i = 0; i < diario.length; i++){
 
-      mensaje += "{Titulo: " + diario[i]['Titulo'] + ", " +
-        "Dia: " + diario[i]['Dia'] + ", " +
-        "Hora: " + diario[i]['Hora'] + ", " +
-        "Entrada: " + diario[i]['Entrada'] + "}";
+      mensaje += "{titulo: " + diario[i]['titulo'] + ", " +
+        "dia: " + diario[i]['dia'] + ", " +
+        "hora: " + diario[i]['hora'] + ", " +
+        "entrada: " + diario[i]['entrada'] + "}";
     }
 
     mensaje += "]";
