@@ -16,15 +16,16 @@ exports.handler = async function(event, context){
     mensaje += "]";
   }
 
-  //Si no hay datos se muestra dicho mensaje
-  else{
-    mensaje = "{No existen entradas en el diario}";
-  }
-
   //Se muestran los datos
-  return{
-    statusCode: 200,
-    headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify(mensaje)
-  };
+  if(diario!=""){
+	 return{
+	    statusCode: 200,
+	    body: JSON.stringify(mensaje)
+  	}
+  }else{
+  	return {
+  		statusCode:500,
+  		body:"No existe ninguna entrada que mostrar"
+  	}
+  }
 }
