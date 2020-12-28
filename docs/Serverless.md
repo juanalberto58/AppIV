@@ -30,3 +30,8 @@ Tras realizar todos los anteriores pasos ya tenemos Netlify configurado y nos pr
 Vamos a configurar tambien los despliegues para ello que vamos a decir a Netlify que el directorio en el cual encontrará nuestros ficheros de código será **functions**:
 
 ![Netlify8](../image/netlify8.png)
+
+Una vez todo configurado lo siguiente es hacer la función que se implementará, dicha [función](https://github.com/juanalberto58/AppIV/blob/master/functions/diario.js) pertenece a la [historia de usuario](https://github.com/juanalberto58/AppIV/issues/32).
+Como podemos ver dicha función lo que realiza es que muestra todas las entradas registradas en el diario y estas entradas se encuentran en el fichero diario.json las cuales las devuelve si todo se ha realizado correctamente.
+
+A través del siguiente [enlace](https://appiv.netlify.app/.netlify/functions/diario) se puede ver como dicha función funciona correctamente. 
