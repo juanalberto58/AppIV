@@ -1,0 +1,36 @@
+[
+  {
+    "Titulo": "Viaje al monte",
+    "Dia": "Lunes",
+    "Hora": "17:00",
+    "Entrada": "Hoy he estado en el monte",
+  },
+
+  {
+    "Titulo": "Viaje a la playa",
+    "Dia": "Martes",
+    "Hora": "11:00",
+    "Entrada": "Hoy he estado en la playa",
+  },
+
+  {
+    "Titulo": "Viaje a Malaga",
+    "Dia": "Miercoles",
+    "Hora": "10:00",
+    "Entrada": "Hoy he estado en Malaga",
+  },
+
+  {
+    "Titulo": "Viaje a Sevilla",
+    "Dia": "Jueves",
+    "Hora": "19:00",
+    "Entrada": "Hoy he estado en Sevila",
+  },
+
+  {
+    "Titulo": "Viaje a Huelva",
+    "Dia": "Viernes",
+    "Hora": "20:00",
+    "Entrada": "Hoy he estado en Huelva",
+  }
+]
