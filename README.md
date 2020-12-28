@@ -27,6 +27,7 @@ Para un correcto desarrollo del proyecto vamos a estructurarlo en etapas de mane
 - [**Documentación de la configuración de git**](./docs/config-git.md) : Aquí podrás ver la configuración de Git para el proyecto.
 - [**Docker**](./docs/Docker.md) : En este apartado encontrarás toda la información relaccionada con la utilización de Docker, el ¿Como? y el ¿Por que? de esta herramienta.
 - [**Integración Contínua**](./docs/CI.md) : En este apartado encontrarás todo los relativo a la configuración de Travis y Shippable.
+- [**Serverless**](./docs/Serverless.md) : Aquí encontrarás toda la configuración de Netlify y .
 
 ## Autor
 
