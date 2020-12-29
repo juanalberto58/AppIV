@@ -1,5 +1,40 @@
 # Serverless
 
+## Vercel
+
+Lo primero que tenemos que hacer es ir a la página de [Vercel](https://vercel.com/), una vez dentro vamos a registrarnos y trás esto nos saldrá la opción de seguir con nuestra cuenta de Github:
+
+![vercel1](../image/vercel1.png)
+
+Le damos permisos: 
+
+![vercel2](../image/vercel2.png)
+
+Una vez dentro nos pide importar repositorio de Github o importar template, en nuestro caso vamos a importar nuestro repositorio de Github que es con el que estamos trabajando:
+
+![vercel3](../image/vercel3.png)
+![vercel4](../image/vercel4.png)
+
+Tras esto nos pregunta si queremos que con cada push que hagamos en nuestro repositorio haga un despliegue a lo que le decimos que si:
+
+![vercel5](../image/vercel5.png)
+
+Despues de seleccionar 'Si' empezamos con la instalación de vercel en nuestro repositorio de Github:
+
+![vercel6](../image/vercel6.png)
+
+Importamos nuestro proyecto:
+
+![vercel7](../image/vercel7.png)
+
+Y ya tendriamos nuestro proyecto desplegado:
+
+![vercel8](../image/vercel8.png)
+
+
+
+
+
 ## Netlify
 
 Para empezar lo que tenemos que hacer es ir a la página de [Netlify](https://www.netlify.com/), una vez dentro vamos a registrarnos y trás darle a registro ya nos aparace la opción de vincular con nuestra cuenta de Github.
