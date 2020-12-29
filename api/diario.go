@@ -3,9 +3,7 @@ package handler
 import (
     "fmt"
     "net/http"
-    "time"
     "github.com/juanalberto58/AppIV/src/YourLife"
-  	"encoding/json"
   	"strings"
 )
 
