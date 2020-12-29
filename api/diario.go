@@ -7,6 +7,11 @@ import (
   	"strings"
 )
 
+type salida struct{
+	entrada String `json:"entrada"`
+}
+
+
 var diario = []Entrada {
 	Entrada {
 		titulo: "Me voy de pesca",
