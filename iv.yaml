@@ -4,4 +4,4 @@ entidad:
 lenguaje: go
 test: src/YourLife/api_test.go
 taskfile: makefile
-
+URL: https://appiv.netlify.app/.netlify/functions/diario
