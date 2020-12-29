@@ -3,7 +3,7 @@ package handler
 import (
     "fmt"
     "net/http"
-    "github.com/juanalberto58/AppIV/src/YourLife"
+    main "ap/src/YourLife"
   	"strings"
 )
 
