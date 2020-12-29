@@ -44,5 +44,9 @@ var diario = []Entrada {
 
 func Handler(w http.ResponseWriter, r *http.Request) {
 	
-	
+	if r.URL.String() == "api/diario" {
+			fmt.Fprintf(w, "Funciona")
+	}else{
+		fmt.Fprintf(w, "Funciona")
+	}
 }
