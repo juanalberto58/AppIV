@@ -1,15 +1,14 @@
 package handler
 
 import (
-    "fmt"
-    "net/http"
-    main "ap/src/YourLife"
-  	"strings"
-)
 
-type salida struct{
-	entrada String `json:"entrada"`
-}
+	"encoding/json"
+    "fmt"
+    "regexp"
+    "net/http"
+  	"strings"
+  	"github.com/juanalberto58/AppIV/src/YourLife"
+)
 
 
 var diario = []Entrada {
