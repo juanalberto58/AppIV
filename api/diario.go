@@ -2,44 +2,51 @@ package handler
 
 import (
 
-	"encoding/json"
+
     "fmt"
-    "regexp"
+
     "net/http"
-  	"strings"
+
 )
+
+type Entrada struct{
+	Titulo string
+	Dia string
+	Hora string
+	Texto string
+}
 
 
 var diario = []Entrada {
 	Entrada {
-		titulo: "Me voy de pesca",
-		dia: "Lunes",
-		hora: "17:00",
-		entrada: "Hoy me he ido de pesca al rio",
+		Titulo: "Me voy de pesca",
+		Dia: "Lunes",
+		Hora: "17:00",
+		Texto: "Hoy me he ido de pesca al rio",
 	},
 	Entrada {
-		titulo: "Me voy de caza",
-		dia: "Martes",
-		hora: "11:00",
-		entrada: "Hoy me he ido de caza al monte",
+		Titulo: "Me voy de caza",
+		Dia: "Martes",
+		Hora: "11:00",
+		Texto: "Hoy me he ido de caza al monte",
 	},
 	Entrada {
-		titulo: "Me voy a comer a un restaurante",
-		dia: "Miercoles",
-		hora: "14:00",
-		entrada: "Hoy me he ido a comer a un restaurante",
+		Titulo: "Me voy a comer a un restaurante",
+		Dia: "Miercoles",
+		Hora: "14:00",
+		Texto: "Hoy me he ido a comer a un restaurante",
 	},
 	Entrada {
-		titulo: "Me voy a Sevilla",
-		dia: "Jueves",
-		hora: "10:00",
-		entrada: "Hoy me he ido a Sevilla",
+		Titulo: "Me voy a Sevilla",
+		Dia: "Jueves",
+		Hora: "10:00",
+		Texto: "Hoy me he ido a Sevilla",
 	},
 	Entrada {
-		titulo: "Me voy a Jaen",
-		dia: "Viernes",
-		hora: "11:00",
-		entrada: "Hoy me he ido a Jaen",
+		Titulo: "Me voy a Jaen",
+		Dia: "Viernes",
+		Hora: "11:00",
+		Texto: "Hoy me he ido a Jaen",
 	},
 
 }
