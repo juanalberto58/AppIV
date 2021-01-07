@@ -4,6 +4,8 @@ import (
 
 
     "fmt"
+    "regexp"
+    "strings"
     //"ap/src/main"
     //"github.com/juanalberto58/AppIV/src/main"
     "net/http"
@@ -16,6 +18,10 @@ type Entrada struct{
 	Dia string
 	Hora string
 	Texto string
+}
+
+func (e Entrada)getDia() string{
+	return e.Dia
 }
 
 func (e Entrada)getTitulo() string{
@@ -61,16 +67,37 @@ var diario = []Entrada {
 func Handler(w http.ResponseWriter, r *http.Request) {
 	
 	if r.URL.String() == "api/diario" {
-		var i int
-		for i = 0; i < len(diario); i++ {
-			diario[i].getTitulo()
-		}	
-			fmt.Fprintf(w, "Funciona1")
+			var i int
+			for i = 0; i < len(diario); i++ {
+				if "dia" == diario[i].getDia(){
+					w.Header().Add("Content-Type", "text/html")
+					fmt.Fprintf(w, `
+						<!DOCTYPE html>
+							<head>
+								<tittle>Titulo</tittle>
+							</head>	
+							<body>
+								<h1>`+diario[i].getTitulo()+`</h1>
+							</body>
+					`)
+				}
+			}
+		}
 	}else{
-		var i int
-		for i = 0; i < len(diario); i++ {
-			fmt.Fprintf(w, diario[i].getTitulo())
-		}	
-		fmt.Fprintf(w, "Funciona2")
+		w.Header().Add("Content-Type", "text/html")
+		fmt.Fprintf(w, `
+			<!DOCTYPE html>
+			<head>
+				<tittle>Diario</tittle>
+			</head>	
+			<body>
+				<form method="GET">
+					<label>
+						<input type="text" name="dia"/>
+					</label>
+					<button type="submit">Buscar</button>
+				</form>
+			</body>
+			`)
 	}
 }
