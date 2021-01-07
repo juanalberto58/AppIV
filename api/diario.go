@@ -63,7 +63,7 @@ var diario = []Entrada {
 
 
 func Handler(w http.ResponseWriter, r *http.Request) {
-	
+
 	if r.URL.String() == "api/diario" {
 			var i int
 			for i = 0; i < len(diario); i++ {
@@ -97,5 +97,26 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 				</form>
 			</body>
 			`)
+
+			if r.Method == "GET" {
+				var d = r.FormValue("dia")
+
+				var i int
+				for i = 0; i < len(diario); i++ {
+					if d == diario[i].getDia(){
+						w.Header().Add("Content-Type", "text/html")
+						fmt.Fprintf(w, `
+							<!DOCTYPE html>
+								<head>
+									<tittle>Titulo</tittle>
+								</head>	
+								<body>
+									<h1>`+diario[i].getTitulo()+`</h1>
+								</body>
+						`)
+					}
+				}
+			}
+
 	}
 }
