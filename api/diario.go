@@ -5,8 +5,9 @@ import (
 
     "fmt"
     //"ap/src/main"
-    "github.com/juanalberto58/AppIV/src/YourLife"
+    "github.com/juanalberto58/AppIV/src/main"
     "net/http"
+    //"../src/main"
 
 )
 
@@ -56,8 +57,10 @@ var diario = []Entrada {
 func Handler(w http.ResponseWriter, r *http.Request) {
 	
 	if r.URL.String() == "api/diario" {
-			fmt.Fprintf(w, "Funciona")
+			diario.getTitulo()
+			fmt.Fprintf(w, "Funciona1")
 	}else{
-		fmt.Fprintf(w, "Funciona")
+
+		fmt.Fprintf(w, "Funciona2")
 	}
 }
