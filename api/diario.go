@@ -107,11 +107,9 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 						w.Header().Add("Content-Type", "text/html")
 						fmt.Fprintf(w, `
 							<!DOCTYPE html>
-								<head>
-									<tittle>Titulo</tittle>
-								</head>	
 								<body>
-									<h1>`+diario[i].getTitulo()+`</h1>
+									<h1> Titulo de tu dia </h1>
+									<h2>`+diario[i].getTitulo()+`</h2>
 								</body>
 						`)
 					}
