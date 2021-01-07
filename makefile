@@ -1,11 +1,11 @@
 test: 
-	go test -v ./src/main
+	go test -v ./src/YourLife
 	
 build:
-	go build ./src/main/
+	go build ./src/YourLife/
 	go build ./api/
-	mv YourLife src/main
+	mv YourLife src/YourLife
 
 run: 
-	go run ./src/main
+	go run ./src/YourLife
 
