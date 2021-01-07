@@ -67,7 +67,10 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 		}	
 			fmt.Fprintf(w, "Funciona1")
 	}else{
-
+		var i int
+		for i = 0; i < len(diario); i++ {
+			diario[i].getTitulo()
+		}	
 		fmt.Fprintf(w, "Funciona2")
 	}
 }
