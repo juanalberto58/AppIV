@@ -11,12 +11,16 @@ import (
 
 )
 
-/*type Entrada struct{
+type Entrada struct{
 	Titulo string
 	Dia string
 	Hora string
 	Texto string
-}*/
+}
+
+func (e Entrada)getTitulo() string{
+	return e.Titulo
+}
 
 
 var diario = []Entrada {
@@ -57,7 +61,10 @@ var diario = []Entrada {
 func Handler(w http.ResponseWriter, r *http.Request) {
 	
 	if r.URL.String() == "api/diario" {
-			diario.getTitulo()
+		var i int
+		for i = 0; i < len(diario); i++ {
+			diario[i].getTitulo()
+		}	
 			fmt.Fprintf(w, "Funciona1")
 	}else{
 
