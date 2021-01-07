@@ -1,9 +1,8 @@
-module ap
+module github.com/juanalberto58/AppIV/src/YourLife
 
 go 1.15
 
 require (
-
 	golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9
 	golang.org/x/net v0.0.0-20201008223702-a5fa9d4b7c91
 	golang.org/x/sys v0.0.0-20200501145240-bc7a7d42d5c3 // indirect

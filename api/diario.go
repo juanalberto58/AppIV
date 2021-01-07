@@ -4,17 +4,18 @@ import (
 
 
     "fmt"
-
+    //"ap/src/main"
+    "github.com/juanalberto58/AppIV/src/YourLife"
     "net/http"
 
 )
 
-type Entrada struct{
+/*type Entrada struct{
 	Titulo string
 	Dia string
 	Hora string
 	Texto string
-}
+}*/
 
 
 var diario = []Entrada {
