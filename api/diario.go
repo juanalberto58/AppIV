@@ -82,7 +82,7 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 					`)
 				}
 			}
-		}
+		
 	}else{
 		w.Header().Add("Content-Type", "text/html")
 		fmt.Fprintf(w, `
