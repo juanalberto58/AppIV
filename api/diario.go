@@ -65,6 +65,8 @@ var diario = []Entrada {
 func Handler(w http.ResponseWriter, r *http.Request) {
 var encontrado bool
 encontrado=false
+var no_exis string 
+no_exis=""
 
 	if r.URL.String() == "api/diario" {
 			var i int
@@ -115,6 +117,8 @@ encontrado=false
 									<h3>`+diario[i].getTitulo()+`</h3>
 								</body>
 						`)
+					}else{
+						no_exis="No existe ese dia"
 					}
 				}
 				if encontrado == false {
@@ -122,7 +126,7 @@ encontrado=false
 					fmt.Fprintf(w, `
 						<!DOCTYPE html>
 							<body>
-								<h1> No existe ese dia </h1>
+								<h1> `+no_exis+`</h1>
 							</body>
 					`)
 				}
