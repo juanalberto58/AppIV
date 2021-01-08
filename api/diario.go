@@ -112,17 +112,17 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 									<h5>`+diario[i].getTitulo()+`</h5>
 								</body>
 						`)
-					}else{
-						w.Header().Add("Content-Type", "text/html")
-						fmt.Fprintf(w, `
-							<!DOCTYPE html>
-								<body>
-									<h1> No existe ese dia </h1>
-								</body>
-						`)
-
 					}
 				}
+				w.Header().Add("Content-Type", "text/html")
+				fmt.Fprintf(w, `
+					<!DOCTYPE html>
+						<body>
+							<h1> No existe ese dia </h1>
+						</body>
+				`)
+
+					
 			}
 
 	}
