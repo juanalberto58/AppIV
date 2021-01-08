@@ -109,9 +109,18 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 							<!DOCTYPE html>
 								<body>
 									<h1> Titulo de tu dia </h1>
-									<p>`+diario[i].getTitulo()+`</p>
+									<h5>`+diario[i].getTitulo()+`</h5>
 								</body>
 						`)
+					}else{
+						w.Header().Add("Content-Type", "text/html")
+						fmt.Fprintf(w, `
+							<!DOCTYPE html>
+								<body>
+									<h1> No existe ese dia </h1>
+								</body>
+						`)
+
 					}
 				}
 			}
