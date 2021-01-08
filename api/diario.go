@@ -63,6 +63,8 @@ var diario = []Entrada {
 
 
 func Handler(w http.ResponseWriter, r *http.Request) {
+var encontrado bool
+encontrado=false
 
 	if r.URL.String() == "api/diario" {
 			var i int
@@ -104,24 +106,26 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 				var i int
 				for i = 0; i < len(diario); i++ {
 					if d == diario[i].getDia(){
+						encontrado=true
 						w.Header().Add("Content-Type", "text/html")
 						fmt.Fprintf(w, `
 							<!DOCTYPE html>
 								<body>
 									<h1> Titulo de tu dia </h1>
-									<h5>`+diario[i].getTitulo()+`</h5>
+									<h3>`+diario[i].getTitulo()+`</h3>
 								</body>
 						`)
 					}
 				}
-				w.Header().Add("Content-Type", "text/html")
-				fmt.Fprintf(w, `
-					<!DOCTYPE html>
-						<body>
-							<h1> No existe ese dia </h1>
-						</body>
-				`)
-
+				if encontrado == false {
+					w.Header().Add("Content-Type", "text/html")
+					fmt.Fprintf(w, `
+						<!DOCTYPE html>
+							<body>
+								<h1> No existe ese dia </h1>
+							</body>
+					`)
+				}
 					
 			}
 
