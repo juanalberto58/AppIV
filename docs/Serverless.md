@@ -31,7 +31,9 @@ Y ya tendriamos nuestro proyecto desplegado:
 
 ![vercel8](../image/vercel8.png)
 
+Una vez todo esto realizado vamos a implementar una [función](https://github.com/juanalberto58/AppIV/blob/master/api/diario.go). Dicha función la he programado en GO. En esta función lo que se hace es crear un formulario con HTML con el que pasandole por parámetro un dia de la semana nos mostrará el titulo del dia en el diario y si no existe o no se le pasa nada por parámetro nos mostrará un mensaje de error. 
 
+A través del siguiente [enlace](https://app-iv-g27e35if3.vercel.app/api/diario) podremos comprobar el correcto funcionamiento de dicha función. 
 
 
 
