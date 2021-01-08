@@ -16,4 +16,11 @@ El usuario podra borrar una entrada del diario de algún determinada dia en conc
 
 El usuario podra ver el total de entradas introducidas en el sistema.
 
+## [Historia de Usuario 5](https://github.com/juanalberto58/AppIV/issues/58)
+
+El usuario podra buscar una entrada en el diario.
+
+
+
+
 
