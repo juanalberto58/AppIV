@@ -109,7 +109,7 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 							<!DOCTYPE html>
 								<body>
 									<h1> Titulo de tu dia </h1>
-									<h2>`+diario[i].getTitulo()+`</h2>
+									<p>`+diario[i].getTitulo()+`</p>
 								</body>
 						`)
 					}
