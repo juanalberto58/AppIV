@@ -77,6 +77,16 @@ func (e Entrada)GetCont() int{
 	return e.cont
 }
 
+
+/****************************** GUARDAR ENTRADA ******************************/
+func (e *Entrada)GuardarEntrada(tit string, d string, h string, text string){
+
+	e.Titulo = tit
+	e.Dia = d
+	e.Hora = h
+	e.Texto = text
+}
+
 /***************** SEARCH ENTRADA **********************/
 /**func searchEntrada(array []Entrada,d string, con int) (string,string,string){
 	var i int
@@ -97,16 +107,6 @@ func (e Entrada)GetCont() int{
 		return nada, nada, nada
 	}
 
-}*/
-
-
-/****************************** GUARDAR ENTRADA ******************************/
-/*func GuardarEntrada(tit string, d string, h string, text string){
-	var e Entrada
-	e.Titulo = tit
-	e.Dia = d
-	e.Hora = h
-	e.Texto = text
 }*/
 
 /****************************** EDITAR ENTRADA ******************************/
