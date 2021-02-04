@@ -28,52 +28,52 @@ func (e *Entrada)ContructorParametros(tit string, d string, h string, text strin
 /****************************** GET and SET ******************************/
 
 /**************** GET TITULO ***********************/
-func (e Entrada)getTitulo() string{
+func (e Entrada)GetTitulo() string{
 	return e.Titulo
 }
 
 /**************** SET TITULO ***********************/
-func (e *Entrada)setTitulo(tit string){
+func (e *Entrada)SetTitulo(tit string){
 	e.Titulo=tit
 }
 
 /***************** GET DIA  ***********************/
-func (e Entrada)getDia() string{
+func (e Entrada)GetDia() string{
 	return e.Dia
 }
 
 /***************** SET DIA  ***********************/
-func (e *Entrada)setDia(d string){
+func (e *Entrada)SetDia(d string){
 	e.Dia=d
 }
 
 /***************** GET HORA ***********************/
-func (e Entrada)getHora() string{
+func (e Entrada)GetHora() string{
 	return e.Hora
 }
 
 /***************** SET HORA ***********************/
-func (e *Entrada)setHora(h string){
+func (e *Entrada)SetHora(h string){
 	e.Hora=h
 }
 
 /***************** GET TEXTO **********************/
-func (e Entrada)getTexto() string{
+func (e Entrada)GetTexto() string{
 	return e.Texto
 }
 
 /***************** SET TEXTO **********************/
-func (e *Entrada)setTexto(t string){
+func (e *Entrada)SetTexto(t string){
 	e.Texto=t
 }
 
 /***************** SET NUMERO DE ENTRADAS **********************/
-func (e *Entrada)setCont(c int) {
+func (e *Entrada)SetCont(c int) {
 	e.cont=c
 }
 
 /***************** GET NUMERO DE ENTRADAS **********************/
-func (e Entrada)getCont() int{
+func (e Entrada)GetCont() int{
 	return e.cont
 }
 
