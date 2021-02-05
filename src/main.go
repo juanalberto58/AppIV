@@ -37,35 +37,43 @@ func obtenerEntrada(c *gin.Context){
 }
 
 
-func introducirTitulo(c *gin.Context){
-
+func editarEntrada(c *gin.Context){
+	
 	titulo := c.PostForm("titulo")
+	dia := c.PostForm("dia")
+	hora := c.PostForm("hora")
+	entrada := c.PostForm("entrada")
 
-	new.SetTitulo(titulo)
-	
+	new.EditarEntrada(titulo,dia,hora,entrada)
+
 	c.JSON(200, gin.H{
-		"Mensaje": "Titulo añadido con exito",
+		"Mensaje": "Entrada editada con exito",
 		"Titulo": titulo,
+		"Dia": dia,
+		"Hora": hora,
+		"Entrada": entrada,
 	})
 }
 
-func obtenerTitulo(c *gin.Context){
+func obtenerNumEntradas(c *gin.Context){
 	
 	c.JSON(200, gin.H{
-		"Mensaje": "El titulo es: ",
-		"Titulo": new.GetTitulo(),
+		"Mensaje": "El número de entradas es: ",
+		"Titulo": new.GetCont(),
 	})
 }
+
+
+
 
 
 func main() {
 	r := gin.Default()
 
-	r.POST("/anadetitulo", introducirTitulo)
-	r.GET("/obtenertitulo", obtenerTitulo)
-
-	r.POST("/anadeentrada", introducirEntrada)
+	r.POST("/anadeEntrada", introducirEntrada)
 	r.GET("/obtenerEntrada", obtenerEntrada)
+	r.POST("/modificarEntrada", editarEntrada)
+	r.GET("/numeroEntradas", obtenerNumEntradas)
 
 	r.Run()
 }
