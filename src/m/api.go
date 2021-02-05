@@ -8,6 +8,10 @@ type Entrada struct{
 	cont int
 }
 
+/*type Entradas struct{
+	array []Entrada
+}*/
+
 
 /****************************** CONSTRUCTORES ******************************/
 func (e *Entrada)Contructor(){
@@ -26,6 +30,12 @@ func (e *Entrada)ContructorParametros(tit string, d string, h string, text strin
 	e.cont = c
 }
 /****************************** GET and SET ******************************/
+
+
+/*func NewEntradas() *Entradas{
+	entradas := new(Entradas)
+	return entradas
+}*/
 
 /**************** GET TITULO ***********************/
 func (e Entrada)GetTitulo() string{
@@ -85,6 +95,10 @@ func (e *Entrada)GuardarEntrada(tit string, d string, h string, text string){
 	e.Dia = d
 	e.Hora = h
 	e.Texto = text
+
+	num_entr := e.GetCont()
+	num_entr++
+	e.SetCont(num_entr)
 }
 
 /***************** SEARCH ENTRADA **********************/
@@ -110,10 +124,9 @@ func (e *Entrada)GuardarEntrada(tit string, d string, h string, text string){
 }*/
 
 /****************************** EDITAR ENTRADA ******************************/
-/*func EditarEntrada(ntit string, nd string, nh string, ntext string){
-	var e Entrada
+func (e *Entrada)EditarEntrada(ntit string, nd string, nh string, ntext string){
 	e.Titulo = ntit
 	e.Dia = nd
 	e.Hora = nh
 	e.Texto = ntext
-}*/
+}
