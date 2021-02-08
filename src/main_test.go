@@ -37,6 +37,7 @@ func TestIntroducirEntrada(t *testing.T){
 }
 
 func TestObtenerEntrada(t *testing.T){
+	
 	r := server()
 
 	w := httptest.NewRecorder()
@@ -56,7 +57,7 @@ func TestObtenerEntrada(t *testing.T){
 		t.Errorf("Se esperaba %v, se obtuvo %v", 200, w.Code)
 	}
 
-	q := "{\"Dia\":\"pruebadia\",\"Entrada\":\"pruebaentrada\",\"Hora\":\"pruebahora\",\"Mensaje\":\"Entrada añadida con exito\",\"Titulo\":\"pruebatitulo\"}"
+	q := "{\"Dia\":\"pruebadia\",\"Entrada\":\"pruebaentrada\",\"Hora\":\"pruebahora\",\"Mensaje\":\"La entrada es: \",\"Titulo\":\"pruebatitulo\"}"
 
 	if w.Body.String() != q {
 		t.Errorf("Entrada incorrecta, se esperaba: %v , Se ha obtenido %v", q, w.Body.String())
@@ -65,52 +66,65 @@ func TestObtenerEntrada(t *testing.T){
 }
 
 
-/*
-func TestEditarEntrada(c *gin.Context){
+
+func TestEditarEntrada(t *testing.T){
 	
-	titulo := c.PostForm("titulo")
-	dia := c.PostForm("dia")
-	hora := c.PostForm("hora")
-	entrada := c.PostForm("entrada")
+	r := server()
 
-	new.EditarEntrada(titulo,dia,hora,entrada)
+	w := httptest.NewRecorder()
 
-	c.JSON(200, gin.H{
-		"Mensaje": "Entrada editada con exito",
-		"Titulo": titulo,
-		"Dia": dia,
-		"Hora": hora,
-		"Entrada": entrada,
-	})
-}
+	param := strings.NewReader("titulo=pruebatituloedit&dia=pruebadiaedit&hora=pruebahoraedit&entrada=pruebaentradaedit")
+	resp, err := http.NewRequest("POST", "/modificarEntrada", param)
 
-func TestObtenerNumEntradas(c *gin.Context){
-	
-	c.JSON(200, gin.H{
-		"Mensaje": "El número de entradas es: ",
-		"Titulo": new.GetCont(),
-	})
-}
+	if err != nil {
+		t.Errorf("No se esperaba error, se obtuvo %v", err)
+	}
+
+	resp.Header.Add("Content-Type", "application/x-www-form-urlencoded")
 
 
-func server() *gin.Engine {
+	r.ServeHTTP(w, resp)
 
-	r := gin.Default()
+	if w.Code != 200 {
+		t.Errorf("Se esperaba %v, se obtuvo %v", 200, w.Code)
+	}
 
-	r.POST("/anadeEntrada", introducirEntrada)
-	r.GET("/obtenerEntrada", obtenerEntrada)
-	r.POST("/modificarEntrada", editarEntrada)
-	r.GET("/numeroEntradas", obtenerNumEntradas)
+	q := "{\"Dia\":\"pruebadiaedit\",\"Entrada\":\"pruebaentradaedit\",\"Hora\":\"pruebahoraedit\",\"Mensaje\":\"Entrada editada con exito\",\"Titulo\":\"pruebatituloedit\"}"
 
-	return r
+	if w.Body.String() != q {
+		t.Errorf("Entrada incorrecta, se esperaba: %v , Se ha obtenido %v", q, w.Body.String())
+	}
 }
 
 
 
-func main() {
-	server().Run()
+func TestObtenerNumEntradas(t *testing.T){
+
+	r := server()
+
+	w := httptest.NewRecorder()
+
+	resp, err := http.NewRequest("GET", "/numeroEntradas", nil)
+
+	if err != nil {
+		t.Errorf("No se esperaba error, se obtuvo %v", err)
+	}
+
+	resp.Header.Add("Content-Type", "application/x-www-form-urlencoded")
+
+
+	r.ServeHTTP(w, resp)
+
+	if w.Code != 200 {
+		t.Errorf("Se esperaba %v, se obtuvo %v", 200, w.Code)
+	}
+
+	q := "{\"Mensaje\":\"El número de entradas es: \",\"Num Entradas\":1}"
+
+	if w.Body.String() != q {
+		t.Errorf("Entrada incorrecta, se esperaba: %v , Se ha obtenido %v", q, w.Body.String())
+	}
 }
 
 
-*/
 
