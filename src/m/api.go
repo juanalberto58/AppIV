@@ -8,11 +8,6 @@ type Entrada struct{
 	cont int
 }
 
-/*type Entradas struct{
-	array []Entrada
-}*/
-
-
 /****************************** CONSTRUCTORES ******************************/
 func (e *Entrada)Contructor(){
 	e.Titulo = ""
@@ -30,12 +25,6 @@ func (e *Entrada)ContructorParametros(tit string, d string, h string, text strin
 	e.cont = c
 }
 /****************************** GET and SET ******************************/
-
-
-/*func NewEntradas() *Entradas{
-	entradas := new(Entradas)
-	return entradas
-}*/
 
 /**************** GET TITULO ***********************/
 func (e Entrada)GetTitulo() string{
@@ -100,28 +89,6 @@ func (e *Entrada)GuardarEntrada(tit string, d string, h string, text string){
 	num_entr++
 	e.SetCont(num_entr)
 }
-
-/***************** SEARCH ENTRADA **********************/
-/**func searchEntrada(array []Entrada,d string, con int) (string,string,string){
-	var i int
-	var o int
-	var encon bool
-	var nada string
-
-	for i = 0; i < con; i++ {
-		if(array[i].getDia()==d){
-			encon = true
-		}else{
-			encon = false
-		}
-	}
-	if (encon==true){
-		return array[i].getTitulo(), array[i].getHora(), array[i].getTexto()
-	}else{
-		return nada, nada, nada
-	}
-
-}*/
 
 /****************************** EDITAR ENTRADA ******************************/
 func (e *Entrada)EditarEntrada(ntit string, nd string, nh string, ntext string){
