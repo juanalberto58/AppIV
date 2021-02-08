@@ -36,18 +36,36 @@ func TestIntroducirEntrada(t *testing.T){
 	}
 }
 
-/*func TestObtenerEntrada(c *gin.Context){
-	
-	c.JSON(200, gin.H{
-		"Mensaje": "La entrada es: ",
-		"Titulo": new.GetTitulo(),
-		"Dia": new.GetDia(),
-		"Hora": new.GetHora(),
-		"Entrada": new.GetTexto(),
-	})
+func TestObtenerEntrada(t *testing.T){
+	r := server()
+
+	w := httptest.NewRecorder()
+
+	resp, err := http.NewRequest("GET", "/obtenerEntrada", nil)
+
+	if err != nil {
+		t.Errorf("No se esperaba error, se obtuvo %v", err)
+	}
+
+	resp.Header.Add("Content-Type", "application/x-www-form-urlencoded")
+
+
+	r.ServeHTTP(w, resp)
+
+	if w.Code != 200 {
+		t.Errorf("Se esperaba %v, se obtuvo %v", 200, w.Code)
+	}
+
+	q := "{\"Dia\":\"pruebadia\",\"Entrada\":\"pruebaentrada\",\"Hora\":\"pruebahora\",\"Mensaje\":\"Entrada añadida con exito\",\"Titulo\":\"pruebatitulo\"}"
+
+	if w.Body.String() != q {
+		t.Errorf("Entrada incorrecta, se esperaba: %v , Se ha obtenido %v", q, w.Body.String())
+	}
+
 }
 
 
+/*
 func TestEditarEntrada(c *gin.Context){
 	
 	titulo := c.PostForm("titulo")

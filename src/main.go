@@ -59,7 +59,7 @@ func obtenerNumEntradas(c *gin.Context){
 	
 	c.JSON(200, gin.H{
 		"Mensaje": "El número de entradas es: ",
-		"Titulo": new.GetCont(),
+		"Num Entradas": new.GetCont(),
 	})
 }
 
