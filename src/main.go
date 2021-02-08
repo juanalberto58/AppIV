@@ -64,10 +64,8 @@ func obtenerNumEntradas(c *gin.Context){
 }
 
 
+func server() *gin.Engine {
 
-
-
-func main() {
 	r := gin.Default()
 
 	r.POST("/anadeEntrada", introducirEntrada)
@@ -75,7 +73,13 @@ func main() {
 	r.POST("/modificarEntrada", editarEntrada)
 	r.GET("/numeroEntradas", obtenerNumEntradas)
 
-	r.Run()
+	return r
+}
+
+
+
+func main() {
+	server().Run()
 }
 
 
