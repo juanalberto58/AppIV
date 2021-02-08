@@ -9,3 +9,4 @@ Además Gin nos ofrece una muy buena documentación y sobretodo la gran virtud d
 A través de este [enlace](https://github.com/gin-gonic/gin#benchmarks) podrás ver los Benchmark de algunos de los Microframeworks citados anterioremente.
 
 
+## Diseño general de la api y Historias de Usuario
