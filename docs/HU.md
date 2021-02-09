@@ -20,6 +20,10 @@ El usuario podra ver el total de entradas introducidas en el sistema.
 
 El usuario podra buscar una entrada en el diario.
 
+## [Historia de Usuario 6](https://github.com/juanalberto58/AppIV/issues/61)
+
+El usuario podra consultar una entrada en el diario.
+
 
 
 
