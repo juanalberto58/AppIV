@@ -34,7 +34,6 @@ func obtenerEntrada(c *gin.Context){
 		"Hora": new.GetHora(),
 		"Entrada": new.GetTexto(),
 	})
-	
 }
 
 
