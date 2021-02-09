@@ -26,7 +26,7 @@ func introducirEntrada(c *gin.Context){
 }
 
 func obtenerEntrada(c *gin.Context){
-	
+
 	c.JSON(200, gin.H{
 		"Mensaje": "La entrada es: ",
 		"Titulo": new.GetTitulo(),
@@ -34,6 +34,7 @@ func obtenerEntrada(c *gin.Context){
 		"Hora": new.GetHora(),
 		"Entrada": new.GetTexto(),
 	})
+	
 }
 
 
