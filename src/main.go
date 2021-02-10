@@ -1,6 +1,7 @@
 package main
 
 import(
+	"log"
 	"github.com/gin-gonic/gin"
 	"github.com/juanalberto58/AppIV/src/m"
 )
@@ -63,10 +64,23 @@ func obtenerNumEntradas(c *gin.Context){
 	})
 }
 
+func LogMid() gin.HandlerFunc {
+	return func(c *gin.Context){
+		c.Next()
+		estado := c.Writer.Status()
+		peticion := c.Request.Method
+		ip := c.ClientIP()
+
+		log.Printf("Código de estado: %v,Tipo de petición: %s,IP del cliente: %s", estado, peticion, ip)
+	}
+}
+
 
 func server() *gin.Engine {
 
 	r := gin.Default()
+
+	r.Use(LogMid())
 
 	r.POST("/anadeEntrada", introducirEntrada)
 	r.GET("/obtenerEntrada", obtenerEntrada)
