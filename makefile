@@ -1,5 +1,5 @@
 test: 
-	go test -v ./src/YourLife 
+	go test -v ./src/YourLife ./src/
 	
 build:
 	go build ./src/YourLife/
