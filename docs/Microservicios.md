@@ -15,16 +15,16 @@ En la Api se han desarrollado las siguientes HU en el archivo [main.go](https://
 
 Cada HU implementada tiene su respectiva ruta diferente dentro de la app, las HU implementadas son las siguientes:
 
-- HU1: El usuario podrá añadir una nueva entrada al diario.
+- **HU1: El usuario podrá añadir una nueva entrada al diario.**
 	- Esta HU se desarrolla con la función introducirEntrada(), en ella se procesan y se envían los datos de una entrada mediante una petición POST y su ruta es /anadeEntrada.
 	![anadeEntrada](../image/anadirEntrada.png)
-- HU2: El usuario podra editar la entrada del diario.
+- **HU2: El usuario podra editar la entrada del diario.**
 	- Una vez introducida la entrada mediante la función editarEntrada() podemos editar la entrada enviada. Además esta se realiza también con una petición POST y su ruta es /modificarEntrada.
 	![modificarEntrada](../image/modificarEntrada.png)
-- HU4: El usuario podrá ver el número de entradas del diario.
+- **HU4: El usuario podrá ver el número de entradas del diario.**
 	- Esta HU se implementa en la función obtenerNumEntradas(), esta se obtiene mediante una petición GET y su ruta es /numeroEntradas.
 	![obtenerNumEntrada](../image/obtenerNumEntradas.png)
-- HU6: El usuario podrá consultar una entrada del diario.
+- **HU6: El usuario podrá consultar una entrada del diario.**
 	- Se implementa en obtenerEntrada() la cual obtenemos con una petición GET y su ruta es /obtenerEntrada.
 	![obtenerEntrada](../image/obtenerEntrada.png)
 
