@@ -11,8 +11,6 @@ RUN apk add --no-cache make \
 && apk add git \
 && go get -u github.com/gin-gonic/gin
 
-#Utilizaremos el usuario con el cual haremos la ejecucion sin privilegios
-USER juanalberto58
 
 #Asignamos directorio en el que trabajaremos y copiamos los archivos necesarios.
 WORKDIR /test
