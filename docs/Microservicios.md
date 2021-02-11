@@ -11,7 +11,7 @@ A través de este [enlace](https://github.com/gin-gonic/gin#benchmarks) podrás 
 
 ## Diseño general de la api y Historias de Usuario
 
-En la Api se han desarrollado las siguientes HU en el archivo **main.go** en el cual se utiliza el archivo **api.go** el cual tiene el código necesario para realizar las funciones internas de manera que realicen las distintas acciones, además **main.go** tiene sus respectivos test en el archivo **main_test** que los ejecuto importando el paquete httptest de GO que nos proporciona todas las herramientas necesarias para realizar los test de servidor diciendonos si las rutas y lo que estas ejecutan al recibir la petición nos devuelve el resultado correcto. La **api.go** también tiene sus respectivos test pero esta vez solo importamos el paquete **testing** de Go con el cual realizamos los test automatizados.
+En la Api se han desarrollado las siguientes HU en el archivo [main.go](https://github.com/juanalberto58/AppIV/blob/master/src/main.go)en el cual se utiliza el archivo [api.go](https://github.com/juanalberto58/AppIV/blob/master/src/m/api.go) el cual tiene el código necesario para realizar las funciones internas de manera que realicen las distintas acciones, además **main.go** tiene sus respectivos test en el archivo [main_test](https://github.com/juanalberto58/AppIV/blob/master/src/main_test.go) que los ejecuto importando el paquete httptest de GO que nos proporciona todas las herramientas necesarias para realizar los test de servidor diciendonos si las rutas y lo que estas ejecutan al recibir la petición nos devuelve el resultado correcto. La **api.go** también tiene sus respectivos test pero esta vez solo importamos el paquete **testing** de Go con el cual realizamos los test automatizados, estos se encuentran en el archivo [api_test.go](https://github.com/juanalberto58/AppIV/blob/master/src/m/api_test.go).
 
 Cada HU implementada tiene su respectiva ruta diferente dentro de la app, las HU implementadas son las siguientes:
 
@@ -24,4 +24,26 @@ Cada HU implementada tiene su respectiva ruta diferente dentro de la app, las HU
 - HU6: El usuario podrá consultar una entrada del diario.
 	- Se implementa en obtenerEntrada() la cual obtenemos con una petición GET y su ruta es /obtenerEntrada.
 
+
 ## Uso de buenas practicas, middleware y log
+
+En cuanto al uso de buenas prácticas he dividido el código entre una clase manejadora que controla la funcionalidad de la aplicación internamente [api](https://github.com/juanalberto58/AppIV/blob/master/src/m/api.go) y la clase que realiza las llamadas las peticiones al servidor [main](https://github.com/juanalberto58/AppIV/blob/master/src/main.go).
+
+Además he implementado un middleware que funcione de logs personalizado para que muestre diferentes datos antes de la activación de las rutas como pueden ser la Ip del cliente de la petición, el tipo de petición y el código de estado de esta. Como se puede apreciar en la captura siguiente el middleware funciona correctamente ya que nos muestra los mismos parametros que el de log por defecto:
+
+![logmiddl](../image/logMiddle.png)
+
+El log implementado esta en el archivo [main.go](https://github.com/juanalberto58/AppIV/blob/master/src/main.go), la función LogMid y es llamado antes de la activación de las rutas.
+
+
+## Test
+
+En cuanto a los test como he mencionado anteriormente cada archivo tanto el main como la api tiene sus respenctivos test.
+
+La api tiene su archivo test llamado [api_test.go](https://github.com/juanalberto58/AppIV/blob/master/src/m/api_test.go) en el cual se realizan los test correspondientes y el archivo main tambien tiene sus test en el archivo [main_test](https://github.com/juanalberto58/AppIV/blob/master/src/main_test.go) correspondinetes enfocados en comprobar si las peticiones que se realizan devuelven el resultado correcto, además tambien cada función de test esta enfocada en cada HU para comprobar que el trabajo realizado es el correcto.
+
+
+
+
+
+
