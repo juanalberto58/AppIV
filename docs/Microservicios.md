@@ -17,7 +17,7 @@ Cada HU implementada tiene su respectiva ruta diferente dentro de la app, las HU
 
 - HU1: El usuario podrá añadir una nueva entrada al diario.
 	- Esta HU se desarrolla con la función introducirEntrada(), en ella se procesan y se envían los datos de una entrada mediante una petición POST y su ruta es /anadeEntrada.
-	![anadeEntrada](../image/anadeEntrada.png)
+	![anadeEntrada](../image/anadirEntrada.png)
 - HU2: El usuario podra editar la entrada del diario.
 	- Una vez introducida la entrada mediante la función editarEntrada() podemos editar la entrada enviada. Además esta se realiza también con una petición POST y su ruta es /modificarEntrada.
 	![modificarEntrada](../image/modificarEntrada.png)
