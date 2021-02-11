@@ -46,6 +46,10 @@ En cuanto a los test como he mencionado anteriormente cada archivo tanto el main
 
 La api tiene su archivo test llamado [api_test.go](https://github.com/juanalberto58/AppIV/blob/master/src/m/api_test.go) en el cual se realizan los test correspondientes y el archivo main tambien tiene sus test en el archivo [main_test](https://github.com/juanalberto58/AppIV/blob/master/src/main_test.go) correspondientes enfocados en comprobar si las peticiones que se realizan devuelven el resultado correcto, además también cada función de test está enfocada en cada HU para comprobar que el trabajo realizado es el correcto.
 
+Como podemos ver en la siguiente captura de pantalla los test pasan correctamente para cada ruta:
+
+![testmain](../image/testmain.png)
+
 
 
 
