@@ -5,7 +5,7 @@ FROM golang:alpine3.12
 LABEL maintainer="Juan Alberto Rivera Peña"
 
 #Actualizamos, instalamos make y además añadimos un usuario aprovechando la misma instrucción.
-RUN apk add --no-cache make \
+RUN apk add make \
 && apk build-base \
 && apk add git \
 && go get -u github.com/gin-gonic/gin
