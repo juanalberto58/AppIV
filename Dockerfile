@@ -13,8 +13,6 @@ RUN apk update \
 && apk add git \
 && go get -u github.com/gin-gonic/gin
 
-RUN addgroup
-
 #Asignamos directorio en el que trabajaremos y copiamos los archivos necesarios.
 WORKDIR /test
 
