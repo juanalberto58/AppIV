@@ -8,5 +8,5 @@ build:
 	mv YourLife src/YourLife
 
 run: 
-	go run ./src/main.go
+	go run ./src/YourLife
 
