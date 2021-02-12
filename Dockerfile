@@ -5,9 +5,11 @@ FROM golang:alpine3.12
 LABEL maintainer="Juan Alberto Rivera Peña"
 
 #Actualizamos, instalamos make y además añadimos un usuario aprovechando la misma instrucción.
-RUN apk update \
-&& apk add make \
-&& apk build-base 
+RUN apk add --no-cache make \
+&& apk build-base \
+&& adduser --disabled-password juanalberto58
+
+USER juanalberto58
 
 #Asignamos directorio en el que trabajaremos y copiamos los archivos necesarios.
 WORKDIR /test
