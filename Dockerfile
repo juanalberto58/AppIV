@@ -6,9 +6,7 @@ LABEL maintainer="Juan Alberto Rivera Peña"
 
 #Actualizamos, instalamos make y además añadimos un usuario aprovechando la misma instrucción.
 RUN apk add --no-cache make \
-&& adduser --disabled-password juanalberto58
-
-USER juanalberto58
+&& apk add build-base 
 
 #Asignamos directorio en el que trabajaremos y copiamos los archivos necesarios.
 WORKDIR /test
