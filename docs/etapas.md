@@ -22,4 +22,28 @@
 - Reestructurar el fichero [iv.yaml](https://github.com/juanalberto58/AppIV/issues/14)
 - [Documentar](https://github.com/juanalberto58/AppIV/issues/15) herramientas de construcción utilizadas.
 
+## Hito 3
+
+- Elegir y configurar un contenedor base.
+- Instalar todo lo necesario para poder realizar las pruebas.
+- Instalar el task runner y las bibliotecas se este necesite.
+- Instalar todos los módulos y bibliotecas de test.
+
+## Hito 4 
+
+- Buscar un sistema gratuito para poder realizar la integración continua.
+- Configurar estos sistemas correctamente para que lancen los test automáticamente.
+
+## Hito 5
+
+- Buscar un sistema serverless.
+- Configurar estos sistemas correctamente de acuerdo a nuestra aplicación.
+- Crear una api que funcione en uno de estos sistemas serverless.
+
+## Hito 6
+
+- Crear un microservicio que tenga algunas de las funcionalidades de nuestras HU.
+- Crear test que funcionen sobre nuestro servicio para comprobar los posibles errores.
+- Crear un sistema de log o middleware que nos muestre más información acerca del funcionamiento del microservicio.
+
 
