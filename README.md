@@ -29,6 +29,8 @@ Para un correcto desarrollo del proyecto vamos a estructurarlo en etapas de mane
 - [**Integración Contínua**](./docs/CI.md) : En este apartado encontrarás todo los relativo a la configuración de Travis y Shippable.
 - [**Serverless**](./docs/Serverless.md) : Aquí encontrarás toda la configuración de Netlify y Vercel.
 - [**Microservicios**](./docs/Microservicios.md) : Aquí verás todo los relativo a la configuración de Microservicios.
+- [**Despliegue en un PaaS**](./docs/PaaS.md) : En este apartado encontrarás la realización del depliegue de la aplicación en Heroku.
+
 
 ## Autor
 
