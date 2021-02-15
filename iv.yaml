@@ -6,3 +6,12 @@ test: src/YourLife/api_test.go
 taskfile: makefile
 URL: https://appiv.netlify.app/.netlify/functions/diario
 make: make
+PaaS: appivheroku.herokuapp.com
+recurso:
+  nombre: anadeEntrada
+  metodo: POST
+  payload: 
+    titulo: Probando Heroku
+    dia: Lunes
+    hora: 12:00
+    entrada: Entrada de prueba
