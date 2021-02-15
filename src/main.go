@@ -64,6 +64,15 @@ func obtenerNumEntradas(c *gin.Context){
 	})
 }
 
+
+func stat(c *gin.Context){
+	
+	c.JSON(200,gin.H{
+		"status": "OK",
+	})
+}
+
+
 func LogMid() gin.HandlerFunc {
 	return func(c *gin.Context){
 		c.Next()
@@ -86,7 +95,7 @@ func server() *gin.Engine {
 	r.GET("/obtenerEntrada", obtenerEntrada)
 	r.POST("/modificarEntrada", editarEntrada)
 	r.GET("/numeroEntradas", obtenerNumEntradas)
-
+	r.GET("/status", stat)
 	return r
 }
 
