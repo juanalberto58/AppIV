@@ -6,7 +6,7 @@ build:
 install:
 
 start:
-	./src
+	./src/main.go
 
 run: 
 	go run ./src/main.go
