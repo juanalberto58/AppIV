@@ -7,7 +7,7 @@ build:
 install:
 
 start:
-	./main
+	./bin/src
 
 run: 
 	go run ./src/main.go
