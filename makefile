@@ -2,7 +2,7 @@ test:
 	go test -v ./src ./src/YourLife
 	
 build:
-	go build ./src/main.go
+	
 	
 install:
 
