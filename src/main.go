@@ -72,6 +72,13 @@ func stat(c *gin.Context){
 	})
 }
 
+func index(c *gin.Context){
+	
+	c.JSON(200,gin.H{
+		"El despliegue en heroku se ha realizado correctamente",
+	})
+}
+
 
 func LogMid() gin.HandlerFunc {
 	return func(c *gin.Context){
@@ -96,6 +103,8 @@ func server() *gin.Engine {
 	r.POST("/modificarEntrada", editarEntrada)
 	r.GET("/numeroEntradas", obtenerNumEntradas)
 	r.GET("/status", stat)
+	r.GET("/", index)
+	
 	return r
 }
 
