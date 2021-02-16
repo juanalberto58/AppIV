@@ -68,7 +68,7 @@ func obtenerNumEntradas(c *gin.Context){
 func stat(c *gin.Context){
 	
 	c.JSON(200,gin.H{
-		status: "OK",
+		"status": "OK",
 	})
 }
 
