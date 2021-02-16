@@ -4,7 +4,7 @@
 
 La plataforma que usaremos será Heroku, ¿Por que Heroku?, lo primero es porque ya lo he utilizado en otras ocasiones, lo conozco y se cuales son las funcionalidades que nos ofrece, además de soportar aplicaciones en el lenguaje Go.
 
-Heroku nos ofrece una documentación excelente y su utilización para arrancar nuestra aplicación es sencilla además de ofecernos la posibilidad de ser gratuito el proceso. En Heroku podemos instalar addons para utilizar funcionalidades nuevas, tiene un sistema de log bastante bueno, sobre todo nos permite escalar nuestra aplicación si fuera necesario.
+Heroku nos ofrece una documentación excelente y su utilización para arrancar nuestra aplicación es sencilla además de ofrecernos la posibilidad de ser gratuito el proceso. En Heroku podemos instalar addons para utilizar funcionalidades nuevas, tiene un sistema de log bastante bueno, sobre todo nos permite escalar nuestra aplicación si fuera necesario.
 
 ## Descripción de la configuración
 
@@ -22,7 +22,11 @@ Además como podemos ver en la siguiente captura lo hemos configurado para que c
 
 ![heroku4](../image/heroku4.png)
 
-Una vez hecho esto, el siguiente paso es realizar el archivo de configuración de Heroku en nuestra aplicación para que Heroku sepa que acción tiene que realizar. Este archivo se llama Procfile y lo utiliza Heroku para arrancar la aplicación, en mi caso en este archivo habrá una llamada a una acción en mi task-runner que iniciara el proceso.
+Una vez hecho esto, el siguiente paso es realizar el archivo de configuración de Heroku en nuestra aplicación para que Heroku sepa que acción tiene que realizar. Este archivo se llama [Procfile](https://github.com/juanalberto58/AppIV/blob/master/Procfile) y lo utiliza Heroku para arrancar la aplicación, en mi caso en este archivo habrá una llamada a una acción en mi [task-runner](https://github.com/juanalberto58/AppIV/blob/master/makefile) que iniciara el proceso.
+
+Una vez hecho todos los pasos anteriores ya tenemos nuestra aplicación desplegada. El enlace a mi aplicación es el siguiente:
+
+[https://appivheroku.herokuapp.com/](https://appivheroku.herokuapp.com/)
 
 ## Logs
 
