@@ -18,7 +18,7 @@ Buscamos nuestro repo y lo conectamos, una vez hecho esto ya tenemos nuestro rep
 
 ![heroku2](../image/heroku2.png)
 
-Además como podemos ver en la siguiente captura lo hemos configurado para que con cada push en nuestro repo de github si se pasan todos los test de integración continua configurados previamente se haga un despligue automático:
+Además como podemos ver en la siguiente captura lo hemos configurado para que con cada push en nuestro repo de github si se pasan todos los test de integración continua configurados previamente se haga un despliegue automático:
 
 ![heroku4](../image/heroku4.png)
 
@@ -57,6 +57,6 @@ Una vez hecho todos los pasos anteriores ya tenemos nuestra aplicación desplega
 
 ## Logs
 
-En cuanto al sistema de logs no he tenido que implementar nada ya que Heroku nos ofrece por defecto un sistema de logs en su dashboard y este nos permite ver el funcionamiento de la aplicación:
+En cuanto al sistema de logs no he tenido que implementar nada ya que Heroku nos ofrece por defecto un sistema de logs en su dashboard y este nos permite ver el funcionamiento de la aplicación además de los logs implementados previamente que también nos ofrece información acerca de esta:
 
 ![heroku5](../image/heroku5.png)
