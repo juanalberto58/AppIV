@@ -20,7 +20,7 @@ Buscamos nuestro repo y lo conectamos, una vez hecho esto ya tenemos nuestro rep
 
 Además como podemos ver en la siguiente captura lo hemos configurado para que con cada push en nuestro repo de github si se pasan todos los test de integración continua configurados previamente se haga un despligue automático:
 
-![heroku3](../image/heroku3.png)
+![heroku4](../image/heroku4.png)
 
 Una vez hecho esto, el siguiente paso es realizar el archivo de configuración de Heroku en nuestra aplicación para que Heroku sepa que acción tiene que realizar. Este archivo se llama Procfile y lo utiliza Heroku para arrancar la aplicación, en mi caso en este archivo habrá una llamada a una acción en mi task-runner que iniciara el proceso.
 
