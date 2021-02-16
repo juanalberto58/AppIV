@@ -30,27 +30,27 @@ Una vez hecho todos los pasos anteriores ya tenemos nuestra aplicación desplega
 
 ## Rutas y funcionamiento
 
-- / : Nos devuelve que el servicio esta funcionando:
+- **/** : Nos devuelve que el servicio esta funcionando:
 
 ![herokuapertura](../image/herokuapertura.png)
 
-- /status :	Con la ruta /status comprobamos que efectivamente el servicio esta funcionando:
+- **/status** :	Con la ruta /status comprobamos que efectivamente el servicio esta funcionando:
 
 ![herokustatus](../image/herokustatus.png)
 
-- /anadeEntrada : Esta ruta hace referencia a la HU1, con la cual añadimos una entrada al sistema, como podemos comprobar en la siguiente captura funciona correctamente:
+- **/anadeEntrada** : Esta ruta hace referencia a la HU1, con la cual añadimos una entrada al sistema, como podemos comprobar en la siguiente captura funciona correctamente:
 
 ![herokuanade](../image/herokuanade.png)
 
-- /obtenerEntrada : Con esta ruta que hace referencia a la HU6 obtenemos la entrada añadida:
+- **/obtenerEntrada** : Con esta ruta que hace referencia a la HU6 obtenemos la entrada añadida:
 
 ![herokuobtener](../image/herokuobtener.png)
 
-- /numeroEntradas : Esta ruta hace referencia a la HU4 y nos devuelve el numero de entradas añadidas: 
+- **/numeroEntradas** : Esta ruta hace referencia a la HU4 y nos devuelve el numero de entradas añadidas: 
 
 ![herokunumentradas](../image/herokunumentradas.png)
 
-- /editarEntrada : En esta ruta, referente a la HU2 podemos editar una entrada del sistema:
+- **/editarEntrada** : En esta ruta, referente a la HU2 podemos editar una entrada del sistema:
 
 ![herokumodificar](../image/herokumodificar.png)
 
