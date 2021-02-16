@@ -28,6 +28,33 @@ Una vez hecho todos los pasos anteriores ya tenemos nuestra aplicación desplega
 
 [https://appivheroku.herokuapp.com/](https://appivheroku.herokuapp.com/)
 
+## Rutas y funcionamiento
+
+- / : Nos devuelve que el servicio esta funcionando:
+
+![herokuapertura](../image/herokuapertura.png)
+
+- /status :	Con la ruta /status comprobamos que efectivamente el servicio esta funcionando:
+
+![herokustatus](../image/herokustatus.png)
+
+- /anadeEntrada : Esta ruta hace referencia a la HU1, con la cual añadimos una entrada al sistema, como podemos comprobar en la siguiente captura funciona correctamente:
+
+![herokuanade](../image/herokuanade.png)
+
+- /obtenerEntrada : Con esta ruta que hace referencia a la HU6 obtenemos la entrada añadida:
+
+![herokuobtener](../image/herokuobtener.png)
+
+- /numeroEntradas : Esta ruta hace referencia a la HU4 y nos devuelve el numero de entradas añadidas: 
+
+![herokunumentradas](../image/herokunumentradas.png)
+
+- /editarEntrada : En esta ruta, referente a la HU2 podemos editar una entrada del sistema:
+
+![herokumodificar](../image/herokumodificar.png)
+
+
 ## Logs
 
 En cuanto al sistema de logs no he tenido que implementar nada ya que Heroku nos ofrece por defecto un sistema de logs en su dashboard y este nos permite ver el funcionamiento de la aplicación:
