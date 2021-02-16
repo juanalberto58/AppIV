@@ -24,3 +24,8 @@ Además como podemos ver en la siguiente captura lo hemos configurado para que c
 
 Una vez hecho esto, el siguiente paso es realizar el archivo de configuración de Heroku en nuestra aplicación para que Heroku sepa que acción tiene que realizar. Este archivo se llama Procfile y lo utiliza Heroku para arrancar la aplicación, en mi caso en este archivo habrá una llamada a una acción en mi task-runner que iniciara el proceso.
 
+## Logs
+
+En cuanto al sistema de logs no he tenido que implementar nada ya que Heroku nos ofrece por defecto un sistema de logs en su dashboard y este nos permite ver el funcionamiento de la aplicación:
+
+![heroku5](../image/heroku5.png)
