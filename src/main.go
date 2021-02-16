@@ -75,7 +75,7 @@ func stat(c *gin.Context){
 func index(c *gin.Context){
 	
 	c.JSON(200,gin.H{
-		"El despliegue en heroku se ha realizado correctamente",
+		"Mensaje": "El despliegue en heroku se ha realizado correctamente",
 	})
 }
 
@@ -104,7 +104,7 @@ func server() *gin.Engine {
 	r.GET("/numeroEntradas", obtenerNumEntradas)
 	r.GET("/status", stat)
 	r.GET("/", index)
-	
+
 	return r
 }
 
