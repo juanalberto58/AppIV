@@ -7,6 +7,7 @@ taskfile: makefile
 URL: https://appiv.netlify.app/.netlify/functions/diario
 make: make
 PaaS: https://appivheroku.herokuapp.com
+
 recurso:
   nombre: anadeEntrada
   metodo: POST
