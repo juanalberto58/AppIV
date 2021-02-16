@@ -11,9 +11,8 @@ recurso:
   nombre: anadeEntrada
   metodo: POST
   payload: 
-    titulo: Probando Heroku
+    titulo: ProbandoHeroku
     dia: Lunes
-    hora: 12:00
-    entrada: Entrada de prueba
+    hora: doce
+    entrada: Entradadeprueba
   IDs:
-    
