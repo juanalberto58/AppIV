@@ -8,8 +8,15 @@ import(
 
 var new m.Entrada
 
+type recuentrada struct {
+	Titulo string `json:"Titulo" binding:"required"`
+	Dia string `json:"Dia" binding:"required"`
+	Hora string `json:"Hora" binding:"required"`
+	Entrada string `json:"Entrada" binding:"required"`
+}
+
 func introducirEntrada(c *gin.Context){
-	
+
 	titulo := c.PostForm("titulo")
 	dia := c.PostForm("dia")
 	hora := c.PostForm("hora")
@@ -27,6 +34,31 @@ func introducirEntrada(c *gin.Context){
 		"Entrada": entrada,
 	})
 }
+
+
+func introEntrada(c *gin.Context){
+
+	var entr recuentrada
+	err := c.ShouldBindJSON(&entr)
+
+	if err != nil{
+		c.JSON(400,gin.H{"Mensaje":"Error en la petición"})
+		return
+	}
+
+	new.GuardarEntrada(entr.Titulo,entr.Dia,entr.Hora,entr.Entrada)
+
+	uri := "/entrada/" + entr.Titulo
+	c.Header("Location", uri)
+	c.JSON(201, gin.H{
+		"Mensaje": "Entrada añadida con exito",
+		"Titulo": entr.Titulo,
+		"Dia": entr.Dia,
+		"Hora": entr.Hora,
+		"Entrada": entr.Entrada,
+	})
+}
+
 
 func obtenerEntrada(c *gin.Context){
 
@@ -102,7 +134,7 @@ func server() *gin.Engine {
 	r.Use(LogMid())
 
 	r.POST("/anadeEntrada", introducirEntrada)
-	r.POST("/entrada", introducirEntrada)
+	r.POST("/entrada", introEntrada)
 
 	r.GET("/entrada/:titulo", obtenerEntrada)
 	r.GET("/obtenerEntrada", obtenerEntrada)
