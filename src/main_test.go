@@ -25,8 +25,8 @@ func TestIntroducirEntrada(t *testing.T){
 
 	r.ServeHTTP(w, resp)
 
-	if w.Code != 200 {
-		t.Errorf("Se esperaba %v, se obtuvo %v", 200, w.Code)
+	if w.Code != 201 {
+		t.Errorf("Se esperaba %v, se obtuvo %v", 201, w.Code)
 	}
 
 	q := "{\"Dia\":\"pruebadia\",\"Entrada\":\"pruebaentrada\",\"Hora\":\"pruebahora\",\"Mensaje\":\"Entrada añadida con exito\",\"Titulo\":\"pruebatitulo\"}"

@@ -17,7 +17,9 @@ func introducirEntrada(c *gin.Context){
 
 	new.GuardarEntrada(titulo,dia,hora,entrada)
 
-	c.JSON(200, gin.H{
+	uri := "/entrada/" + titulo
+	c.Header("Location", uri)
+	c.JSON(201, gin.H{
 		"Mensaje": "Entrada añadida con exito",
 		"Titulo": titulo,
 		"Dia": dia,
