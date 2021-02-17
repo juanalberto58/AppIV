@@ -36,6 +36,36 @@ func TestIntroducirEntrada(t *testing.T){
 	}
 }
 
+func TestIntroEntrada(t *testing.T){
+	
+	r := server()
+
+	w := httptest.NewRecorder()
+
+	param := strings.NewReader("{\"Titulo\":\"pruebatitulo\",\"Dia\":\"pruebadia\",\"Hora\":\"pruebahora\",\"Entrada\":\"pruebaentrada\"}")
+	resp, err := http.NewRequest("POST", "/entrada", param)
+
+	if err != nil {
+		t.Errorf("No se esperaba error, se obtuvo %v", err)
+	}
+
+	resp.Header.Add("Content-Type", "application/json")
+
+
+	r.ServeHTTP(w, resp)
+
+	if w.Code != 201 {
+		t.Errorf("Se esperaba %v, se obtuvo %v", 201, w.Code)
+	}
+
+	q := "{\"Dia\":\"pruebadia\",\"Entrada\":\"pruebaentrada\",\"Hora\":\"pruebahora\",\"Mensaje\":\"Entrada añadida con exito\",\"Titulo\":\"pruebatitulo\"}"
+
+	if w.Body.String() != q {
+		t.Errorf("Entrada incorrecta, se esperaba: %v , Se ha obtenido %v", q, w.Body.String())
+	}
+}
+
+
 func TestObtenerEntrada(t *testing.T){
 	
 	r := server()
@@ -119,7 +149,7 @@ func TestObtenerNumEntradas(t *testing.T){
 		t.Errorf("Se esperaba %v, se obtuvo %v", 200, w.Code)
 	}
 
-	q := "{\"Mensaje\":\"El número de entradas es: \",\"Num Entradas\":1}"
+	q := "{\"Mensaje\":\"El número de entradas es: \",\"Num Entradas\":2}"
 
 	if w.Body.String() != q {
 		t.Errorf("Entrada incorrecta, se esperaba: %v , Se ha obtenido %v", q, w.Body.String())
