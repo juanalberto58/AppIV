@@ -59,4 +59,4 @@ Una vez hecho todos los pasos anteriores ya tenemos nuestra aplicación desplega
 
 En cuanto al sistema de logs no he tenido que implementar nada ya que Heroku nos ofrece por defecto un sistema de logs en su dashboard y este nos permite ver el funcionamiento de la aplicación además de los logs implementados previamente que también nos ofrece información acerca de esta:
 
-![heroku5](../image/heroku5.png)
+![heroku5](../image/herokulogg.png)
