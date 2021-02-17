@@ -15,7 +15,7 @@ make: make
 PaaS: https://appivheroku.herokuapp.com/
 
 recurso:
-  nombre: anadeEntrada
+  nombre: entrada
   metodo: POST
   payload: 
     titulo: ProbandoHeroku
