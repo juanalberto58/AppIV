@@ -17,7 +17,7 @@ func introducirEntrada(c *gin.Context){
 
 	new.GuardarEntrada(titulo,dia,hora,entrada)
 
-	uri := "/" + titulo
+	uri := "/entrada/" + titulo
 	c.Header("Location", uri)
 	c.JSON(201, gin.H{
 		"Mensaje": "Entrada añadida con exito",
@@ -102,8 +102,11 @@ func server() *gin.Engine {
 	r.Use(LogMid())
 
 	r.POST("/anadeEntrada", introducirEntrada)
-	r.GET("/anadeEntrada/:titulo", obtenerEntrada)
+	r.POST("/entrada", introducirEntrada)
+
+	r.GET("/entrada/:titulo", obtenerEntrada)
 	r.GET("/obtenerEntrada", obtenerEntrada)
+
 	r.POST("/modificarEntrada", editarEntrada)
 	r.GET("/numeroEntradas", obtenerNumEntradas)
 	r.GET("/status", stat)
