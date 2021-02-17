@@ -94,6 +94,7 @@ func LogMid() gin.HandlerFunc {
 }
 
 
+
 func server() *gin.Engine {
 
 	r := gin.Default()
@@ -101,7 +102,7 @@ func server() *gin.Engine {
 	r.Use(LogMid())
 
 	r.POST("/anadeEntrada", introducirEntrada)
-	r.GET("/anadeEntrada/PruebaHeroku", obtenerEntrada)
+	r.GET("/anadeEntrada/ProbandoHeroku", obtenerEntrada)
 	r.GET("/obtenerEntrada", obtenerEntrada)
 	r.POST("/modificarEntrada", editarEntrada)
 	r.GET("/numeroEntradas", obtenerNumEntradas)
