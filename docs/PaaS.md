@@ -40,11 +40,11 @@ Una vez hecho todos los pasos anteriores ya tenemos nuestra aplicación desplega
 
 - **/entrada** : Esta ruta hace referencia a la HU1, con la cual añadimos una entrada al sistema mediante una petición POST, además para esta petición he tenido que crear un función nueva llamada introEntrada para que la petición se haga con JSON. Como podemos comprobar en la siguiente captura funciona correctamente:
 
-![herokuanade](../image/herokuanade.png)
+![herokuentrada](../image/herokuentrada.png)
 
 - **/entrada/:titulo** : Con esta ruta que hace referencia a la HU6 obtenemos la entrada añadida mediante una petición GET:
 
-![herokuobtener](../image/herokuobtener.png)
+![herokuobte](../image/herokuobte.png)
 
 - **/numeroEntradas** : Esta ruta hace referencia a la HU4 y nos devuelve el numero de entradas añadidas mediante una metición GET: 
 
