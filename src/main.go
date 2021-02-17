@@ -102,7 +102,7 @@ func server() *gin.Engine {
 	r.Use(LogMid())
 
 	r.POST("/anadeEntrada", introducirEntrada)
-	r.GET("/anadeEntrada/ProbandoHeroku", obtenerEntrada)
+	r.GET("/anadeEntrada/:titulo", obtenerEntrada)
 	r.GET("/obtenerEntrada", obtenerEntrada)
 	r.POST("/modificarEntrada", editarEntrada)
 	r.GET("/numeroEntradas", obtenerNumEntradas)
